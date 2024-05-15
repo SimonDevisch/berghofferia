@@ -9,6 +9,7 @@
     --tekstkleur: #201f1f;
     --white: #FFFFFF;
     --lightgreycolor: #fafafa;
+    --heatercolor: #fa0909cc;
 }
 
 body {
@@ -180,5 +181,55 @@ footer > h2 {
     padding: 7.5px 15px;
     background-color:var(--accentcolor_lg);
     height: auto;
+}
+.animated-gif{ /* dit is de stijl voor de lava gif die de stove wordt*/
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 66%;
+    left: 43.5%;
+}
+.gif{
+    border-radius: 100%;
+}
+.animated-gif :first-child{
+    margin-bottom: 5rem;
+}
+.flexbuttons{
+    display: flex;
+    gap: 0.5rem ;
+}
+.buttons{
+    max-width: 7rem;
+    margin: 0 auto;
+    position:absolute;
+    top: 73%;
+    left: 43.5%;
+}
+.buttons p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--heatercolor);
+}
+.flexbuttons{
+    justify-content: space-between;
+}
+.flexbuttons button{
+    height: 2rem;
+    width:4rem;
+    margin-top: -1.5rem;
+}
+.buttons :nth-child(2){
+    margin-bottom: 4.5rem;
+}
+.order-container-keuken{
+    bottom: 700px;
+    padding: 0;
+}
+.counterButton{
+    position: absolute;
+    left: 50%;
+    top: 101%;
 }
 
