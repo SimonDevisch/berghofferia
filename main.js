@@ -1,6 +1,7 @@
 "use strict";
 
 (function () {
+  const vuur = document.querySelector("gif")
   const startScreen = document.querySelector(".startscreen");
   const firstOrderScreen = document.querySelector(".first_orderscreen");
   const kitchenScreen = document.querySelector(".kitchenScreen");
@@ -33,18 +34,40 @@
   function attachKitchenButtonListener() {
     const kitchenButton = document.querySelector(".kitchenButton");
     kitchenButton.addEventListener("click", function () {
-
+      let vuurintensiteit = 0;
+      let vuurintensiteit2 = 0;
       //vind nie goe hoe k de newOrder values in de lijst krijg in de keuken
       kitchenScreen.innerHTML = `
-      <div class="order-container">
+      <div class="order-container-keuken">
       <img src="./images/keuken.png" alt="keuken">
       <button class="counterButton">Naar toog</button>
-      <div class="order-details">
+      <div class="order-details-keuken">
         <p>${newOrder.getMeat() || ''}</p>
         <p>${newOrder.getVeggies() || ''}</p>
         <p>${newOrder.getDoneness() || ''}</p>
       </div>
-    </div>`;
+    </div>
+      <div class="animated-gif">
+        
+        <img src="./images/lava.webp" alt="Animated GIF" class="gif" >
+        <img src="./images/lava.webp" alt="Animated GIF" class="gif" >
+      </div>
+      <div class="buttons">
+        <p>${vuurintensiteit}</p>
+        <div class="flexbuttons">
+        
+          <button type="button1">up</button>
+          <button type="button2">down</button>
+        </div>
+        <p>${vuurintensiteit}</p>
+        <div class="flexbuttons">
+          
+          <button type="button3">up</button>
+          <button type="button4">down</button>
+        </div>
+      </div>
+    `;//dit is alle code in de keuken voor het vuur te verzetten
+
 
 
       setTimeout(function () {
@@ -84,6 +107,7 @@
   }
 
 
+
   class order {
     constructor(meat, veggies, doneness) {
       this.meat = meat;
@@ -119,9 +143,53 @@
       let donenesses = ["Blue", "Saignant", "A point", "Bien cuit"];
       const rnd = Math.floor(Math.random() * donenesses.length);
       this.doneness = donenesses[rnd];
+      if (this.meat === "kip" || this.meat === "kalkoen") { // als de klant kip of kalkoen vraagt moet het doorbakken zijn
+        this.doneness = "Bien cuit";
+      }
       return this.doneness;
     }
   }
+  function attachheaterlistiner() {//dit zou een eventlistiner moeten zijn voor de button om het vuur te bedienen
+    const kitchenButton = document.querySelector(".button1");
+    console.log("test")
+    if (kitchenButton) { // Controleer of kitchenButton bestaat
+        kitchenButton.addEventListener("click", function () {
+            vuurintensiteit += 1;
+            console.log("het vuur is nu verhoogd" + vuurintensiteit);
+        });
+          // Zorg ervoor dat het ingevoerde getal tussen 0 en 10 blijft
+          value = Math.max(0, Math.min(value, 10));
+
+          // Bereken de opacitywaarde lineair tussen 0 en 1
+          const opacity = value / 10;
+  
+          // Pas de opacity toe op een element (bijv. een div met id "myDiv")
+          vuur.style.opacity = opacity;
+    }
+}
+
+function attachheaterlistiner2() {//dit zou een eventlistiner moeten zijn voor de button om het vuur te bedienen
+    const kitchenButton = document.querySelector(".button2");
+    if (kitchenButton) { // Controleer of kitchenButton bestaat
+        kitchenButton.addEventListener("click", function () {
+            vuurintensiteit -= 1;
+            console.log("het vuur is nu verlaagd" + vuurintensiteit);
+        });
+          // Zorg ervoor dat het ingevoerde getal tussen 0 en 10 blijft
+        value = Math.max(0, Math.min(value, 10));
+
+        // Bereken de opacitywaarde lineair tussen 0 en 1
+        const opacity = value / 10;
+
+        // Pas de opacity toe op een element (bijv. een div met id "myDiv")
+        vuur.style.opacity = opacity;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    attachheaterlistiner();
+    attachheaterlistiner2();
+});
 
 
 })();
