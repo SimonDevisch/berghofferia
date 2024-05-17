@@ -1,6 +1,6 @@
-"use strict";
+  import order from './JS/game.js'
 
-(function () {
+
   const vuur = document.querySelector("gif")
   const startScreen = document.querySelector(".startscreen");
   const firstOrderScreen = document.querySelector(".first_orderscreen");
@@ -108,47 +108,7 @@
 
 
 
-  class order {
-    constructor(meat, veggies, doneness) {
-      this.meat = meat;
-      this.veggies = veggies;
-      this.doneness = doneness;
-    }
-
-    getMeat() {
-      return this.meat;
-    }
-
-    getVeggies() {
-      return this.veggies;
-    }
-
-    getDoneness() {
-      return this.doneness;
-    }
-
-    randomizeMeat() {
-      const meats = ["rundvlees", "varkensvlees", "kip", "lam", "kalkoen"];
-      const rnd = Math.floor(Math.random() * meats.length);
-      this.meat = meats[rnd];
-      return this.meat;
-    }
-    randomizeVeggies() {
-      let vegetables = ["wortel", "tomaat", "komkommer", "broccoli", "spinazie"];
-      const rnd = Math.floor(Math.random() * vegetables.length);
-      this.veggies = vegetables[rnd];
-      return this.veggies;
-    }
-    randomizeDoneness() {
-      let donenesses = ["Blue", "Saignant", "A point", "Bien cuit"];
-      const rnd = Math.floor(Math.random() * donenesses.length);
-      this.doneness = donenesses[rnd];
-      if (this.meat === "kip" || this.meat === "kalkoen") { // als de klant kip of kalkoen vraagt moet het doorbakken zijn
-        this.doneness = "Bien cuit";
-      }
-      return this.doneness;
-    }
-  }
+  
   function attachheaterlistiner() {//dit zou een eventlistiner moeten zijn voor de button om het vuur te bedienen
     const kitchenButton = document.querySelector(".button1");
     console.log("test")
@@ -191,5 +151,3 @@ document.addEventListener('DOMContentLoaded', function() {
     attachheaterlistiner2();
 });
 
-
-})();
