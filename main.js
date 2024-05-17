@@ -1,7 +1,7 @@
-  import order from './JS/game.js'
-  import koken from './Koken.js'
-  import keuken from './keuken.js'
-  import order from './game.js'
+  import {order} from './JS/game'
+  import {koken} from './JS/Koken'
+  import {keuken} from './JS/keuken'
+
 
   const geluid = document.querySelector(".ordergeluid");
   const muziek = document.querySelector(".muziek");
@@ -114,4 +114,6 @@
       <p>${newOrder.getVeggies()}</p>
       <p>${newOrder.getDoneness()}</p>`;
     });
+
+    
   }
