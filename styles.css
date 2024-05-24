@@ -233,3 +233,54 @@ footer > h2 {
     top: 101%;
 }
 
+.screen img:first-child {
+    width: 100%;
+}
+
+.screen img:nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    width: 16%;
+    height: 20%;
+}
+
+.kastGerief {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.vlees {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+    position: absolute;
+    bottom: 5rem;
+    left: 39%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.bakken {
+    bottom: 5rem;
+    left: 39%;
+}
+
+.selected {
+    border: 3px solid green;
+}
+
+.options {
+    border: 3px dashed orange;
+}

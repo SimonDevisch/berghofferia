@@ -20,7 +20,7 @@
         }
     
         randomizeMeat() {
-          const meats = ["rundvlees", "varkensvlees", "kip", "lam", "kalkoen"];
+          const meats = ["biefstuk", "kip", "lam", "varkens", "kalkoen"];
           const rnd = Math.floor(Math.random() * meats.length);
           this.meat = meats[rnd];
           return this.meat;

@@ -1,7 +1,8 @@
-  import {order} from './JS/game'
-  import {koken} from './JS/Koken'
-  import {keuken} from './JS/keuken'
-
+  import order from './JS/game.js'
+  import koken from './JS/koken.js'
+  import keuken from './JS/keuken.js'
+  import { opstart } from './JS/opstartgame.js'
+  import { move } from './JS/move';
 
   const geluid = document.querySelector(".ordergeluid");
   const muziek = document.querySelector(".muziek");
@@ -9,6 +10,7 @@
   const startScreen = document.querySelector(".startscreen");
   const firstOrderScreen = document.querySelector(".first_orderscreen");
   const kitchenScreen = document.querySelector(".kitchenScreen");
+
 
   const startSpel = function () {
     firstOrderScreen.classList.add("hidden");
@@ -35,12 +37,13 @@
       firstOrderScreen.classList.remove("hidden");
       attachKitchenButtonListener();
     }, 2000);
+    console.log("start button clicked");
   };
 
   const startButton = document.querySelector(".startbutton");
   startButton.addEventListener("click", startSpel);
 
-  function attachKitchenButtonListener() {
+  const attachKitchenButtonListener = function() {
     const kitchenButton = document.querySelector(".kitchenButton");
     kitchenButton.addEventListener("click", function () {
       let vuurintensiteit = 0;
@@ -87,7 +90,7 @@
 
     });
     
-    function attachCounterButtonListener() {
+    const attachCounterButtonListener = function() {
       const counterButton = document.querySelector(".counterButton");
       counterButton.addEventListener("click", function () {
         setTimeout(() => {
@@ -114,6 +117,5 @@
       <p>${newOrder.getVeggies()}</p>
       <p>${newOrder.getDoneness()}</p>`;
     });
-
-    
   }
+startSpel();
