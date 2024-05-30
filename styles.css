@@ -71,10 +71,11 @@ h1 {
 /* Main desktop */
 .intro {
     margin: 0 auto;
+    position: relative;
 }
 
 .intro p {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .startbutton {
@@ -152,7 +153,6 @@ footer > h2 {
 
 .order-container {
     position: relative;
-    display: inline-block;
 }
 
 .order-container img {
@@ -284,3 +284,15 @@ footer > h2 {
 .options {
     border: 3px dashed orange;
 }
+
+/* BESTELLING */
+
+.order-details-keuken {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 10rem ;
+}
+

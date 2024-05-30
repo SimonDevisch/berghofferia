@@ -3,8 +3,8 @@
 const startScreen = document.querySelector(".startscreen");
 const firstOrderScreen = document.querySelector(".first_orderscreen");
 const kitchenScreen = document.querySelector(".kitchenScreen");
-
-export class opstart {
+const startButton = document.querySelector(".startbutton");
+class opstart {
     //initialiseert de game
     initGame(){
         firstOrderScreen.classList.add("hidden");
@@ -15,7 +15,6 @@ export class opstart {
             muziek.play();//de achtergrondmuziek laten afspelen op loop
             startScreen.style.opacity = "0";
         }, 5000);
-
           firstOrderScreen.innerHTML = `
           <div class="order-container">
               <img src="./images/eerste_order.png" alt="Balie met mensen en kassa">
@@ -31,4 +30,8 @@ export class opstart {
         }, 2000);
     };
 }
+//click event starspel button:
+startButton.addEventListener("click", opstart.initGame());
+
+export default opstart;
 

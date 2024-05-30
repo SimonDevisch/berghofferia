@@ -1,7 +1,7 @@
   import order from './JS/game.js'
   import koken from './JS/koken.js'
   import keuken from './JS/keuken.js'
-  import { opstart } from './JS/opstartgame.js'
+  //import { opstart } from './JS/opstartgame.js'
   import { move } from './JS/move';
 
   const geluid = document.querySelector(".ordergeluid");
@@ -38,9 +38,11 @@
       attachKitchenButtonListener();
     }, 2000);
     console.log("start button clicked");
+    
   };
 
   const startButton = document.querySelector(".startbutton");
+  console.log(startButton);
   startButton.addEventListener("click", startSpel);
 
   const attachKitchenButtonListener = function() {
@@ -118,4 +120,3 @@
       <p>${newOrder.getDoneness()}</p>`;
     });
   }
-startSpel();
