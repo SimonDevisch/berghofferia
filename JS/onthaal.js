@@ -1,16 +1,17 @@
 //hier komt alle code in voor het onthaal te regelen
 import keuken from "./keuken";
-const attachKitchenButtonListener = function() {
+const attachKitchenButtonListener = function () {
     const kitchenButton = document.querySelector(".kitchenButton");
     kitchenButton.addEventListener("click", function () {
         let keuken = new keuken();//dit zou een nieuwe keuken moeten maken
-    })}
-const attachCounterButtonListener = function() {
-      const counterButton = document.querySelector(".counterButton");
-      counterButton.addEventListener("click", function () {
+    })
+}
+const attachCounterButtonListener = function () {
+    const counterButton = document.querySelector(".counterButton");
+    counterButton.addEventListener("click", function () {
         setTimeout(() => {
-          kitchenScreen.classList.add("hidden")
-          firstOrderScreen.classList.remove("hidden")
+            kitchenScreen.classList.add("hidden")
+            firstOrderScreen.classList.remove("hidden")
         }, 500);
     });
 }
