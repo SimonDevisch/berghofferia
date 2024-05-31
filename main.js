@@ -1,16 +1,26 @@
-"use strict";
+  import order from './JS/game.js'
+  import koken from './JS/koken.js'
+  import keuken from './JS/keuken.js'
+  import { opstart } from './JS/opstartgame.js'
+  import { move } from './JS/move';
 
-(function () {
+  const geluid = document.querySelector(".ordergeluid");
+  const muziek = document.querySelector(".muziek");
   const vuur = document.querySelector("gif")
   const startScreen = document.querySelector(".startscreen");
   const firstOrderScreen = document.querySelector(".first_orderscreen");
   const kitchenScreen = document.querySelector(".kitchenScreen");
+
+
   const startSpel = function () {
+    firstOrderScreen.classList.add("hidden");
+    kitchenScreen.classList.add("hidden");
     startScreen.innerHTML =
       '<img src="./images/start_dag.png" alt="Balie met mensen en kassa">';
     startScreen.classList.add("introTekst");
     startButton.textContent = "Herstart de game";
     setTimeout(function () {
+      muziek.play();//de achtergrondmuziek laten afspelen op loop
       startScreen.style.opacity = "0";
     }, 5000);
 
@@ -27,11 +37,13 @@
       firstOrderScreen.classList.remove("hidden");
       attachKitchenButtonListener();
     }, 2000);
+    console.log("start button clicked");
   };
+
   const startButton = document.querySelector(".startbutton");
   startButton.addEventListener("click", startSpel);
 
-  function attachKitchenButtonListener() {
+  const attachKitchenButtonListener = function() {
     const kitchenButton = document.querySelector(".kitchenButton");
     kitchenButton.addEventListener("click", function () {
       let vuurintensiteit = 0;
@@ -77,7 +89,8 @@
       }, 500);
 
     });
-    function attachCounterButtonListener() {
+    
+    const attachCounterButtonListener = function() {
       const counterButton = document.querySelector(".counterButton");
       counterButton.addEventListener("click", function () {
         setTimeout(() => {
@@ -90,7 +103,7 @@
     const newOrder = new order();
     const orderButton = document.querySelector(".takeOrder");
     orderButton.addEventListener("click", function () {
-
+      geluid.play();//villager sound spelen HHHHUUUUHH
       newOrder.randomizeMeat();
       newOrder.randomizeVeggies();
       newOrder.randomizeDoneness();
@@ -105,91 +118,4 @@
       <p>${newOrder.getDoneness()}</p>`;
     });
   }
-
-
-
-  class order {
-    constructor(meat, veggies, doneness) {
-      this.meat = meat;
-      this.veggies = veggies;
-      this.doneness = doneness;
-    }
-
-    getMeat() {
-      return this.meat;
-    }
-
-    getVeggies() {
-      return this.veggies;
-    }
-
-    getDoneness() {
-      return this.doneness;
-    }
-
-    randomizeMeat() {
-      const meats = ["rundvlees", "varkensvlees", "kip", "lam", "kalkoen"];
-      const rnd = Math.floor(Math.random() * meats.length);
-      this.meat = meats[rnd];
-      return this.meat;
-    }
-    randomizeVeggies() {
-      let vegetables = ["wortel", "tomaat", "komkommer", "broccoli", "spinazie"];
-      const rnd = Math.floor(Math.random() * vegetables.length);
-      this.veggies = vegetables[rnd];
-      return this.veggies;
-    }
-    randomizeDoneness() {
-      let donenesses = ["Blue", "Saignant", "A point", "Bien cuit"];
-      const rnd = Math.floor(Math.random() * donenesses.length);
-      this.doneness = donenesses[rnd];
-      if (this.meat === "kip" || this.meat === "kalkoen") { // als de klant kip of kalkoen vraagt moet het doorbakken zijn
-        this.doneness = "Bien cuit";
-      }
-      return this.doneness;
-    }
-  }
-  function attachheaterlistiner() {//dit zou een eventlistiner moeten zijn voor de button om het vuur te bedienen
-    const kitchenButton = document.querySelector(".button1");
-    console.log("test")
-    if (kitchenButton) { // Controleer of kitchenButton bestaat
-        kitchenButton.addEventListener("click", function () {
-            vuurintensiteit += 1;
-            console.log("het vuur is nu verhoogd" + vuurintensiteit);
-        });
-          // Zorg ervoor dat het ingevoerde getal tussen 0 en 10 blijft
-          value = Math.max(0, Math.min(value, 10));
-
-          // Bereken de opacitywaarde lineair tussen 0 en 1
-          const opacity = value / 10;
-  
-          // Pas de opacity toe op een element (bijv. een div met id "myDiv")
-          vuur.style.opacity = opacity;
-    }
-}
-
-function attachheaterlistiner2() {//dit zou een eventlistiner moeten zijn voor de button om het vuur te bedienen
-    const kitchenButton = document.querySelector(".button2");
-    if (kitchenButton) { // Controleer of kitchenButton bestaat
-        kitchenButton.addEventListener("click", function () {
-            vuurintensiteit -= 1;
-            console.log("het vuur is nu verlaagd" + vuurintensiteit);
-        });
-          // Zorg ervoor dat het ingevoerde getal tussen 0 en 10 blijft
-        value = Math.max(0, Math.min(value, 10));
-
-        // Bereken de opacitywaarde lineair tussen 0 en 1
-        const opacity = value / 10;
-
-        // Pas de opacity toe op een element (bijv. een div met id "myDiv")
-        vuur.style.opacity = opacity;
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    attachheaterlistiner();
-    attachheaterlistiner2();
-});
-
-
-})();
+startSpel();
