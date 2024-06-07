@@ -41,8 +41,9 @@ startButton.addEventListener("click", startSpel);
 
 const attachKitchenButtonListener = function () {
   const kitchenButton = document.querySelector(".kitchenButton");
-  kitchenButton.addEventListener("click", function () {
+  kitchenButton.addEventListener("click", async function () {
     new keuken()
+    move();
   });
 
   const attachCounterButtonListener = function () {
