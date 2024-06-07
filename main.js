@@ -1,8 +1,8 @@
 import order from './JS/game.js'
 import koken from './JS/koken.js'
 import keuken from './JS/keuken.js'
-//import { opstart } from './JS/opstartgame.js'
-import { move } from './JS/move';
+import {move} from "./JS/move.js";
+//import { opstart } from './JS/opstartgame.js';
 
 const geluid = document.querySelector(".ordergeluid");
 const muziek = document.querySelector(".muziek");
@@ -41,8 +41,9 @@ startButton.addEventListener("click", startSpel);
 
 const attachKitchenButtonListener = function () {
   const kitchenButton = document.querySelector(".kitchenButton");
-  kitchenButton.addEventListener("click", function () {
-    new keuken()
+  kitchenButton.addEventListener("click", async function () {
+    await new keuken()
+    move();
   });
 
   const attachCounterButtonListener = function () {
