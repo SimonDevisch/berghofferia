@@ -45,7 +45,7 @@ class keuken {
         <div class="buttons">
             <div class="intensiteitbuttons">
                 <p>${this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
-      }</p>
+    }</p>
                 <div class="flexbuttons">
                     <button class="furnaceOneUp" type="button">up</button>
                     <button class="furnaceOneDown" type="button">down</button>
@@ -53,7 +53,7 @@ class keuken {
             </div>
             <div class="intensiteitbuttons">
                 <p>${this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
-      }</p>
+    }</p>
                 <div class="flexbuttons">
                     <button class="furnaceTwoUp" type="button">up</button>
                     <button class="furnaceTwoDown" type="button">down</button>

@@ -1,12 +1,16 @@
+import koken from "./koken.js";
+import Koken from "./koken.js";
+
 export const move = function () {
 
     const pans = document.querySelectorAll(".pannen .pan");
     const kookplaten = document.querySelectorAll(".animated-gif .gif");
+    const vleesstukken = document.querySelectorAll(".pannen img[src*='raw']");
     const anderePan1 = document.querySelector("#panVuur1");
     const anderePan2 = document.querySelector("#panVuur2");
 
-    let panClicked = false;
     let selectedPan = null;
+    let selectedVlees = null;
 
     pans.forEach(pan => {
         pan.addEventListener("click", function () {
@@ -41,20 +45,40 @@ export const move = function () {
             }
         });
     });
+
+    vleesstukken.forEach(vlees => {
+        vlees.addEventListener("click", function () {
+            selectedVlees = vlees;
+            vlees.classList.add('selected');
+            if (!anderePan1.dataset.bezet) {
+                anderePan1.classList.add('options');
+            }
+            if (!anderePan2.dataset.bezet) {
+                anderePan2.classList.add('options');
+            }
+        });
+    });
+
+    [anderePan1, anderePan2].forEach(function (pan) {
+        pan.addEventListener("click", function () {
+            if (selectedVlees && !pan.dataset.bezet) {
+                selectedVlees.classList.remove('selected');
+                pan.dataset.bezet = "true";
+                pan.classList.remove('options');
+                pan.classList.add('bezet');
+
+                if (pan === anderePan1) {
+                    selectedVlees.classList.add('positie1');
+                    const gerecht1 = new Koken(false, );
+                    gerecht1.changeCookingStage();
+                } else if (pan === anderePan2) {
+                    selectedVlees.classList.add('positie2');
+                    const gerecht2 = new Koken(false, );
+                    gerecht2.changeCookingStage();
+                }
+
+                selectedVlees = null;
+            }
+        });
+    });
 }
-
-/*
-vleess.addEventListener("click", function() {
-   vleesClicked = true;
-    vlees.classList.add('selected');
-    anderePan.classList.add('options');
-});
-
-anderePan.addEventListener("click", function () {
-    anderePan.classList.remove('options');
-    vlees.classList.remove('selected');
-    if (panClicked && vleesClicked) {
-        vlees.classList.add('bakken');
-    }
-});
-*/
