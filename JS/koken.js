@@ -1,53 +1,69 @@
 class koken {
-    //cookingTime standaard waarde van 20 secoonden, deksel boolean, heat value 1-10
-    constructor(lid,heat){
-        this.cookingTime= 40
-        this.lid = lid;
-        this.heat = heat;
-    }
-    calculateTime(){
-        //per hitte level gaat het 2.5 seconde sneller klaar zijn
-        this.cookingTime -= this.heat*2.5;
+  //cookingTime standaard waarde van 20 secoonden, deksel boolean, heat value 1-10
+  constructor(lid, heat) {
+    this.cookingTime = 40;
+    this.lid = lid;
+    this.heat = heat;
+  }
+  calculateTime() {
+    // per hitte level gaat het 2.5 seconde sneller klaar zijn
+    this.cookingTime -= this.heat * 5;
 
-        //als je een deksel gebruikt kook je 15% sneller
-        if(this.lid == true){
-            this.cookingTime *= .85
-        }
-        return this.cookingTime;
+    // als je een deksel gebruikt kook je 15% sneller
+    if (this.lid) {
+      this.cookingTime *= 0.85;
     }
-    
-    changeCookingStage(){
-      foodImage = new Image();
-      foodImage.src = "./images/spritesheet.png"
-      const spriteX = [0, 1, 2, 3, 4,5]; 
-      const spriteY = [0,1,2,3,4];
-      const spriteDim = 128;
-      const currentY = 0;
-      const meats = ["beef", "chicken", "mutton", "porkcop", "salmon"];
-      
-      //placeholder currently until meat is entered
-      const meatImg= "mutton_raw.png";
-      let underscore = meatImg.indexOf("_");
-      let currentMeat = meatImg.substring(0,underscore);
-      let currentMeatIndex = meats.indexOf(currentMeat);
-      
-      currentY = (spriteDim*currentMeatIndex);
-      
-    }
+    return this.cookingTime;
+  }
 
-    // de energiemeter die wordt aangepast
-    energiemeter(vermenigvuldiger){
-        let energie = 100;
-        let tijdsInterval = 20000 / vermenigvuldiger;
+  changeCookingStage() {
+    const foodImage = new Image();
+    foodImage.src = "./images/spritesheet.png";
+    let frameX = 0;
+    const spriteDim = 128;
+    const meats = ["beef", "chicken", "mutton", "porkchop", "salmon"];
 
-        let energieVerminderen = setInterval(() => {
-            if(vermenigvuldiger == 0){
-                return;
-            }
-            energie--;
-            console.log("energie--")
-        }, tijdsInterval)
-    }    
+    // Placeholder voor het huidige vlees
+    const meatImg = document.getElementById("meatImgId"); // Pas meatImgId aan naar jouw img id
+    const underscore = meatImg.src.indexOf("_");
+    const currentMeat = meatImg.src.substring(0, underscore);
+    const currentMeatIndex = meats.indexOf(currentMeat);
+    console.log(currentMeat); // log to check if the meat matches up
+    const currentY = spriteDim * currentMeatIndex;
+    console.log(currentY); // log to check if y value is correct for the spritesheet
+    // Controleer of foodImage geladen is voordat je tekent
+    foodImage.onload = () => {
+      drawImg(foodImage, frameX * spriteDim, currentY);
+    };
+
+    // Definieer de drawImg functie om een img te gebruiken
+    const drawImg = (image, x, y) => {
+      meatImg.src = image.src;
+      meatImg.style.width = `${spriteDim}px`;
+      meatImg.style.height = `${spriteDim}px`;
+      meatImg.style.objectFit = "none";
+      meatImg.style.objectPosition = `-${x}px -${y}px`;
+      console.log(meatImg);
+    };
+
+    setTimeout(() => {
+      requestAnimationFrame(this.changeCookingStage.bind(this));
+    }, this.calculateTime());
+    this.energiemeter();
+  }
+
+  // de energiemeter die wordt aangepast
+  energiemeter() {
+    let energie = 100;
+    let tijdsInterval = 20000 / this.heat;
+    let energieVerminderen = setInterval(() => {
+      if (this.heat == 0) {
+        return;
+      }
+      energie--;
+      console.log("energie--");
+    }, tijdsInterval);
+  }
 }
 
 export default koken;
