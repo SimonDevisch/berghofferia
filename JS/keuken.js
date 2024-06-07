@@ -59,7 +59,11 @@ class keuken {
                     <button class="furnaceTwoDown" type="button">down</button>
                 </div>
             </div>
-        </div>`;
+        </div>
+        <div class="bordkeuken bord>
+          <img src="./images/bord.png" alt="bord">
+        <div/>
+        `;
     //het maakt de button om terug te keren naar het onthaal
     //en verwijderd die om naar de keuken te gaan
     setTimeout(function () {
