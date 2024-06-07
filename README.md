@@ -23,11 +23,13 @@ We willen volgende week ervoor zorgen dat de knoppen in het spel werken, zodat e
 
 Week 4:
 
-Deze week hebben we alle knoppen werkend gemaakt en ervoor gezorgd dat er vlotte en duidelijke overgangen zijn, ook hebben we sprites gemaakt voor de soorten vlees. Deze zijn dan voor elke soort vlees en voor hoe het gebakken is. De orders kunnen nu ook aangemaakt worden en kunnen gezien worden in de keuken. Voor volgende week is het doel voor de kast te hebben waar de potten en pannen in staan met een drag functie voor het vlees in de pan de kunnen droppen.
+Deze week hebben we alle knoppen werkend gemaakt en ervoor gezorgd dat er vlotte en duidelijke overgangen zijn, ook hebben we sprites gemaakt voor de soorten vlees. Deze zijn dan voor elke soort vlees en voor hoe het gebakken is. De orders kunnen nu ook aangemaakt worden en kunnen gezien worden in de keuken. 
+Voor volgende week is het doel voor de kast te hebben waar de potten en pannen in staan met een drag functie voor het vlees in de pan de kunnen droppen.
 
 Week 5:
 
 Deze week hebben we ons bezig gehouden met te zorgen dat de kookplaten werken en dat ze hoger of lager kunnen gezet worden, ook hebben we de files iets meer opgesplit zodat het duidelijker is wat waar gebeurd. Hier zijn iets meer buggs bijgekomen dan gedacht dus duurde dit wel even. Ook hebben we ervoor gezorgd dat er een click functie is voor pannen op het vuur te zetten, we zijn afgeweken van de drag en drop waar we in het begin aan dachten omdat het dan lastig werd voor vlees boven op de pan te kunnen leggen.
+Het doel voor volgende week is dat de pannen en het vlees allemaal in de kast liggen en op het vuur gezet kunnen worden, we hebben al code geschreven voor het bakken van het vlees maar dit nog niet goed kunnen testen dus hopelijk werkt dit direct. 
 
 Week 6: 
 
