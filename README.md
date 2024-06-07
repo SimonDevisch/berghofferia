@@ -21,4 +21,14 @@ Deze week hebben we afbeeldingen gemaakt om in het spel te gebruiken. Ook hebben
 Het maken van de achtergronden ging redelijk vlot. We hebben geprobeerd om interactieve afbeeldingen en knoppen boven de achtergrond te plaatsen, maar het is nog moeilijk om die altijd op de juiste plek te laten staan. We hebben geleerd dat het een uitdaging is om de verschillende onderdelen van het spel op de correcte plaats te zetten en om vlotte overgangen te tonen in het spel. 
 We willen volgende week ervoor zorgen dat de knoppen in het spel werken, zodat er van scherm gewisseld kan worden. Ook zullen we dan zoeken hoe we het spel met een toetsenbord kunnen bedienen. 
 
+Week 4:
+
+Deze week hebben we alle knoppen werkend gemaakt en ervoor gezorgd dat er vlotte en duidelijke overgangen zijn, ook hebben we sprites gemaakt voor de soorten vlees. Deze zijn dan voor elke soort vlees en voor hoe het gebakken is. De orders kunnen nu ook aangemaakt worden en kunnen gezien worden in de keuken. Voor volgende week is het doel voor de kast te hebben waar de potten en pannen in staan met een drag functie voor het vlees in de pan de kunnen droppen.
+
+Week 5:
+
+Deze week hebben we ons bezig gehouden met te zorgen dat de kookplaten werken en dat ze hoger of lager kunnen gezet worden, ook hebben we de files iets meer opgesplit zodat het duidelijker is wat waar gebeurd. Hier zijn iets meer buggs bijgekomen dan gedacht dus duurde dit wel even. Ook hebben we ervoor gezorgd dat er een click functie is voor pannen op het vuur te zetten, we zijn afgeweken van de drag en drop waar we in het begin aan dachten omdat het dan lastig werd voor vlees boven op de pan te kunnen leggen.
+
+Week 6: 
+
 
