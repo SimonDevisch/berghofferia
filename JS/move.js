@@ -1,3 +1,6 @@
+import koken from "./koken.js";
+import Koken from "./koken.js";
+
 export const move = function () {
 
     const pans = document.querySelectorAll(".pannen .pan");
@@ -66,8 +69,12 @@ export const move = function () {
 
                 if (pan === anderePan1) {
                     selectedVlees.classList.add('positie1');
+                    const gerecht1 = new Koken(false, );
+                    gerecht1.changeCookingStage();
                 } else if (pan === anderePan2) {
                     selectedVlees.classList.add('positie2');
+                    const gerecht2 = new Koken(false, );
+                    gerecht2.changeCookingStage();
                 }
 
                 selectedVlees = null;
