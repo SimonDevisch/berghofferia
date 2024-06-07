@@ -260,6 +260,56 @@ footer>h2 {
     padding: 0;
 }
 
+.pannen img {
+    position: absolute;
+    height: 3rem;
+    width: 7rem;
+}
+
+.pannen img:first-child {
+    top: 4rem;
+    left: 5.5rem;
+}
+
+.pannen img:nth-child(2) {
+    top: 11rem;
+    left: 5.5rem;
+}
+
+.pannen img:nth-child(3) {
+    top: 16rem;
+    left: 1rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(4) {
+    top: 24rem;
+    left: 1rem;
+    height: 5rem;
+}
+
+.pannen img:nth-child(5) {
+    top: 17rem;
+    left: 9rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(6) {
+    top: 24rem;
+    left: 9rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(7) {
+    top: 32rem;
+    left: 5rem;
+    height: 5rem;
+    width: 6rem;
+}
+
 .counterButton {
     position: absolute;
     right: 1rem;

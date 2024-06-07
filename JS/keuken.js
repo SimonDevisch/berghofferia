@@ -24,6 +24,11 @@ class keuken {
         <div class="pannen">
             <img src="./images/Pan.png" alt="braadpan">
             <img src="./images/Pan.png" alt="vispan">
+            <img src="./images/beef_raw.png" alt="raw beef">
+            <img src="./images/chicken_raw.png" alt="raw chicken">
+            <img src="./images/mutton_raw.png" alt="raw mutton">
+            <img src="./images/porkchop_raw.png" alt="raw porkchop">
+            <img src="./images/salmon_raw.png" alt="raw salmon">
           </div>
         <div class="order-details-keuken">
           <p>${newOrder.getMeat() || ''}</p>
