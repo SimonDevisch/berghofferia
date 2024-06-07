@@ -268,13 +268,13 @@ footer>h2 {
 
 .pannen img:first-child {
     top: 4rem;
-    left: 5.5rem;
+    left: 1.5rem;
 }
 
 /*img*/
 .pannen img:nth-child(2) {
-    top: 11rem;
-    left: 5.5rem;
+    top: 4rem;
+    left: 9rem;
 }
 
 .pannen img:nth-child(3) {
@@ -309,6 +309,16 @@ footer>h2 {
     left: 5rem;
     height: 5rem;
     width: 6rem;
+}
+
+.pannen img:nth-child(8) {
+    top: 10rem;
+    left: 1rem;
+}
+
+.pannen img:nth-child(9) {
+    top: 10rem;
+    left: 9rem;
 }
 
 #panVuur1,

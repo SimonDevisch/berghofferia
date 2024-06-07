@@ -27,6 +27,8 @@ class keuken {
             <img src="./images/mutton_raw.png" alt="raw mutton">
             <img src="./images/porkchop_raw.png" alt="raw porkchop">
             <img src="./images/salmon_raw.png" alt="raw salmon">
+            <img src="./images/deksel.png" alt="deksel1">
+            <img src="./images/deksel.png" alt="deksel2">
             <img id="panVuur1" class="hidden" src="./images/bovenaanzicht_pan.png" alt="bovenaanzicht pan">
             <img id="panVuur2" class="hidden" src="./images/bovenaanzicht_pan.png" alt="bovenaanzicht pan">
         </div>
@@ -42,18 +44,16 @@ class keuken {
         </div>
         <div class="buttons">
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
-                }</p>
+                <p>${this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceOneUp" type="button">up</button>
                     <button class="furnaceOneDown" type="button">down</button>
                 </div>
             </div>
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
-                }</p>
+                <p>${this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceTwoUp" type="button">up</button>
                     <button class="furnaceTwoDown" type="button">down</button>
