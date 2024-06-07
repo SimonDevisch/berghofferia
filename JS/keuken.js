@@ -1,8 +1,10 @@
 import koken from "./koken.js";
 import order from "./game.js";
-import { newOrder } from "../main.js"; // Import the newOrder instance
-
+import { newOrder } from "../main.js";
+//dit zal alle logica bevatten om de keuken te genereren
 class keuken {
+  //deze class zorgt ervoor dat de keuken wordt aangemaakt,
+  //het zet de events aan
   constructor() {
     this.vuurintensiteit1 = 0;
     this.vuurintensiteit2 = 0;
@@ -18,7 +20,7 @@ class keuken {
         <img src="./images/keuken.png" alt="keuken">
         <button class="counterButton">Naar toog</button>
         <div class="pannen">
-            <img src="./images/Pan.png" alt="braadpan">
+            <img class="pan" src="./images/Pan.png" alt="braadpan">
             <img src="./images/kookpot.png" alt="vispan">
             <img src="./images/beef_raw.png" alt="raw beef">
             <img src="./images/chicken_raw.png" alt="raw chicken">
@@ -27,6 +29,8 @@ class keuken {
             <img src="./images/salmon_raw.png" alt="raw salmon">
             <img src="./images/deksel.png" alt="deksel1">
             <img src="./images/deksel.png" alt="deksel2">
+            <img id="panVuur1" class="hidden" src="./images/bovenaanzicht_pan.png" alt="bovenaanzicht pan">
+            <img id="panVuur2" class="hidden" src="./images/bovenaanzicht_pan.png" alt="bovenaanzicht pan">
         </div>
         <div class="order-details-keuken">
             <p>${newOrder.getMeat() || ""}</p>
@@ -55,17 +59,16 @@ class keuken {
                     <button class="furnaceTwoDown" type="button">down</button>
                 </div>
             </div>
-        </div>
-        <div class="bordkeuken bord">
-                <img src="./images/bord.png" alt="bord">
-        <div/> 
-        `;
+        </div>`;
+    //het maakt de button om terug te keren naar het onthaal
+    //en verwijderd die om naar de keuken te gaan
     setTimeout(function () {
       firstOrderScreen.classList.add("hidden");
       kitchenScreen.classList.remove("hidden");
     }, 500);
   }
 
+  //dit zoekt naar alle buttons in het document voor het vuur te veranderen
   runKeuken() {
     console.log("started running keuken");
     const furnaceOneUp = document.querySelector(".furnaceOneUp");
@@ -74,7 +77,7 @@ class keuken {
     const furnaceTwoDown = document.querySelector(".furnaceTwoDown");
     const firstOrderScreen = document.querySelector(".first_orderscreen");
     const kitchenScreen = document.querySelector(".kitchenScreen");
-
+    //hieronder staan alle click events voor het veranderen van het vuur
     furnaceOneUp.addEventListener("click", () => {
       console.log("vuur 1 up clicked");
       this.updateVuurintensiteit1(1);
@@ -92,6 +95,7 @@ class keuken {
       this.updateVuurintensiteit2(-1);
     });
 
+    //dit zorgt ervoor dat de button om terug te keren naar het onthaal werkt
     function attachCounterButtonListener() {
       const counterButton = document.querySelector(".counterButton");
       counterButton.addEventListener("click", function () {
@@ -105,6 +109,7 @@ class keuken {
     attachCounterButtonListener();
   }
 
+  //hier staan de events voor het verhogen en verlagen van de vuurintsiteiten
   updateVuurintensiteit1 = (delta) => {
     if (
       this.vuurintensiteit1 + delta >= 0 &&
@@ -164,4 +169,5 @@ class keuken {
   };
 }
 
+//het exporteren van deze file
 export default keuken;

@@ -1,6 +1,7 @@
 import order from "./JS/game.js";
 import koken from "./JS/koken.js";
 import keuken from "./JS/keuken.js";
+//import { opstart } from './JS/opstartgame.js'
 import { move } from "./JS/move";
 
 const geluid = document.querySelector(".ordergeluid");
@@ -9,7 +10,6 @@ const vuur = document.querySelector("gif");
 const startScreen = document.querySelector(".startscreen");
 const firstOrderScreen = document.querySelector(".first_orderscreen");
 const kitchenScreen = document.querySelector(".kitchenScreen");
-
 const newOrder = new order();
 
 const startSpel = function () {
@@ -27,9 +27,6 @@ const startSpel = function () {
             <div class="order-container">
               <button class="takeOrder">neem bestelling</button>
             </div>
-            <div class="bordonthaal bord">
-              <img src="images/bord.png" alt="bord"/>
-            </div>
         </div>`;
   setTimeout(function () {
     startScreen.classList.add("hidden");
@@ -43,9 +40,20 @@ startButton.addEventListener("click", startSpel);
 
 const attachKitchenButtonListener = function () {
   const kitchenButton = document.querySelector(".kitchenButton");
-  kitchenButton.addEventListener("click", function () {
-    new keuken(); // Initialize keuken class when kitchen button is clicked
+  kitchenButton.addEventListener("click", async function () {
+    await new keuken();
+    move();
   });
+
+  const attachCounterButtonListener = function () {
+    const counterButton = document.querySelector(".counterButton");
+    counterButton.addEventListener("click", function () {
+      setTimeout(() => {
+        kitchenScreen.classList.add("hidden");
+        firstOrderScreen.classList.remove("hidden");
+      }, 500);
+    });
+  };
 
   const orderButton = document.querySelector(".takeOrder");
   orderButton.addEventListener("click", function () {
@@ -65,5 +73,4 @@ const attachKitchenButtonListener = function () {
       <p>${newOrder.getDoneness()}</p>`;
   });
 };
-
 export { newOrder };

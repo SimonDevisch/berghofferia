@@ -231,7 +231,7 @@ footer>h2 {
     margin: 0 auto;
     position: absolute;
     gap: 4.7rem;
-    bottom: 5rem;
+    bottom: 3rem;
     left: 22.5rem;
 }
 
@@ -319,6 +319,23 @@ footer>h2 {
 .pannen img:nth-child(9) {
     top: 10rem;
     left: 9rem;
+}
+
+#panVuur1,
+#panVuur2 {
+    position: absolute;
+    height: 15rem;
+    z-index: 2;
+    width: 13rem;
+    bottom: 6rem;
+}
+
+#panVuur1 {
+    left: 20.5rem;
+}
+
+#panVuur2 {
+    left: 33.5rem;
 }
 
 .counterButton {

@@ -1,11 +1,11 @@
 export const move = function() {
 
-const pan = document.querySelector("#pan");
-const kookplaat = document.querySelector("#kookplaat");
-const anderePan = document.querySelector("#anotherPan");
-const vlees = document.querySelector('.vlees');
+const pan = document.querySelector(".pannen .pan");
+const kookplaat = document.querySelector(".animated-gif .gif");
+const anderePan = document.querySelector("#panVuur1");
+
+
 let panClicked = false;
-let vleesClicked = false;
 
 pan.addEventListener("click", function () {
     panClicked = true;
@@ -22,7 +22,10 @@ kookplaat.addEventListener("click", function () {
     }
 });
 
-vlees.addEventListener("click", function() {
+}
+
+/*
+vleess.addEventListener("click", function() {
    vleesClicked = true;
     vlees.classList.add('selected');
     anderePan.classList.add('options');
@@ -35,5 +38,4 @@ anderePan.addEventListener("click", function () {
         vlees.classList.add('bakken');
     }
 });
-
-}
+*/
