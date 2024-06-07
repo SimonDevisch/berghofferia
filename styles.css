@@ -419,6 +419,18 @@ footer>h2 {
     border: 3px dashed orange;
 }
 
+.positie1 {
+    z-index: 3;
+    left: 23.5rem !important;
+    top: 28rem !important;
+}
+
+.positie2 {
+    z-index: 3;
+    left: 36.5rem !important;
+    top: 27rem !important;
+}
+
 /* BESTELLING */
 
 .order-details-keuken {
