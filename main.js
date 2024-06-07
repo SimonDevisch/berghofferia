@@ -42,7 +42,7 @@ startButton.addEventListener("click", startSpel);
 const attachKitchenButtonListener = function () {
   const kitchenButton = document.querySelector(".kitchenButton");
   kitchenButton.addEventListener("click", async function () {
-    new keuken()
+    await new keuken()
     move();
   });
 
