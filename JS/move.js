@@ -1,27 +1,46 @@
-export const move = function() {
+export const move = function () {
 
-const pan = document.querySelector(".pannen .pan");
-const kookplaat = document.querySelector(".animated-gif .gif");
-const anderePan = document.querySelector("#panVuur1");
+    const pans = document.querySelectorAll(".pannen .pan");
+    const kookplaten = document.querySelectorAll(".animated-gif .gif");
+    const anderePan1 = document.querySelector("#panVuur1");
+    const anderePan2 = document.querySelector("#panVuur2");
 
+    let panClicked = false;
+    let selectedPan = null;
 
-let panClicked = false;
+    pans.forEach(pan => {
+        pan.addEventListener("click", function () {
+            selectedPan = pan;
+            pan.classList.add('selected');
+            kookplaten.forEach(function (kookplaat) {
+                if (!kookplaat.classList.contains('bezet')) {
+                    kookplaat.classList.add('options');
+                }
+            });
+        });
+    });
 
-pan.addEventListener("click", function () {
-    panClicked = true;
-    pan.classList.add('selected');
-    kookplaat.classList.add('options');
-});
-
-kookplaat.addEventListener("click", function () {
-    kookplaat.classList.remove('options');
-    if (panClicked) {
-        pan.style.display = "none";
-        anderePan.classList.remove('hidden');
-        anderePan.classList.add('show');
-    }
-});
-
+    kookplaten.forEach(function (kookplaat) {
+        kookplaat.addEventListener("click", function () {
+            if (selectedPan) {
+                selectedPan.style.display = "none";
+                selectedPan.classList.remove('selected');
+                kookplaten.forEach(function (kookplaat) {
+                    kookplaat.classList.remove('options');
+                });
+                if (kookplaat.id === "kookplaat1") {
+                    anderePan1.classList.remove('hidden');
+                    anderePan1.classList.add('show');
+                    kookplaat.classList.add('bezet');
+                } else if (kookplaat.id === "kookplaat2") {
+                    anderePan2.classList.remove('hidden');
+                    anderePan2.classList.add('show');
+                    kookplaat.classList.add('bezet');
+                }
+                selectedPan = null;
+            }
+        });
+    });
 }
 
 /*

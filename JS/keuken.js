@@ -21,7 +21,7 @@ class keuken {
         <button class="counterButton">Naar toog</button>
         <div class="pannen">
             <img class="pan" src="./images/Pan.png" alt="braadpan">
-            <img src="./images/kookpot.png" alt="vispan">
+            <img class="pan" src="./images/Pan.png" alt="vispan">
             <img src="./images/beef_raw.png" alt="raw beef">
             <img src="./images/chicken_raw.png" alt="raw chicken">
             <img src="./images/mutton_raw.png" alt="raw mutton">
@@ -39,8 +39,8 @@ class keuken {
         </div>
         </div>
         <div class="animated-gif">
-            <img src="./images/lava.webp" alt="Animated GIF" class="gif">
-            <img src="./images/lava.webp" alt="Animated GIF" class="gif">
+            <img src="./images/lava.webp" alt="Animated GIF" id="kookplaat1" class="gif">
+            <img src="./images/lava.webp" alt="Animated GIF" id="kookplaat2" class="gif">
         </div>
         <div class="buttons">
             <div class="intensiteitbuttons">
