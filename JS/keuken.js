@@ -38,24 +38,26 @@ class keuken {
         </div>
         <div class="buttons">
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
-                }</p>
+                <p>${this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceOneUp" type="button">up</button>
                     <button class="furnaceOneDown" type="button">down</button>
                 </div>
             </div>
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
-                }</p>
+                <p>${this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceTwoUp" type="button">up</button>
                     <button class="furnaceTwoDown" type="button">down</button>
                 </div>
             </div>
-        </div>`;
+        </div>
+        <div class="bordkeuken bord">
+                <img src="./images/bord.png" alt="bord">
+        <div/> 
+        `;
     setTimeout(function () {
       firstOrderScreen.classList.add("hidden");
       kitchenScreen.classList.remove("hidden");

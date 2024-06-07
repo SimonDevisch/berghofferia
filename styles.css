@@ -270,6 +270,7 @@ footer>h2 {
     top: 4rem;
     left: 5.5rem;
 }
+
 /*img*/
 .pannen img:nth-child(2) {
     top: 11rem;
@@ -333,6 +334,22 @@ footer>h2 {
 .animated-gif img:nth-child(2) {
     position: absolute;
     left: 8rem;
+}
+
+.bordkeuken img {
+    bottom: 11rem;
+    right: 5rem;
+}
+
+.bordonthaal img {
+    bottom: 6rem;
+    left: 6rem;
+}
+
+.bord img {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
 }
 
 .kastGerief {
