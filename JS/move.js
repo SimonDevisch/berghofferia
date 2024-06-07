@@ -26,7 +26,7 @@ kookplaat.addEventListener("click", function () {
 }
 
 /*
-vlees.addEventListener("click", function() {
+vleess.addEventListener("click", function() {
    vleesClicked = true;
     vlees.classList.add('selected');
     anderePan.classList.add('options');
