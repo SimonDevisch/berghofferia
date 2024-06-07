@@ -27,6 +27,9 @@ const startSpel = function () {
             <div class="order-container">
               <button class="takeOrder">neem bestelling</button>
             </div>
+            <div class="bordonthaal bord">
+            <img src="images/bord.png" alt="bord">
+          </div>
         </div>`;
   setTimeout(function () {
     startScreen.classList.add("hidden");
