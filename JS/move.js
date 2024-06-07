@@ -1,12 +1,11 @@
 export const move = function() {
 
-const pan = document.querySelector(".pan");
+const pan = document.querySelector(".pannen .pan");
 const kookplaat = document.querySelector(".animated-gif .gif");
 const anderePan = document.querySelector("#panVuur1");
 
 
 let panClicked = false;
-let vleesClicked = false;
 
 pan.addEventListener("click", function () {
     panClicked = true;
