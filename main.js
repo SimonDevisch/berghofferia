@@ -71,6 +71,6 @@ const attachKitchenButtonListener = function () {
       <p>${newOrder.getMeat()}</p>
       <p>${newOrder.getVeggies()}</p>
       <p>${newOrder.getDoneness()}</p>`;
+    localStorage.setItem("order", JSON.stringify(newOrder));
   });
 };
-export { newOrder };

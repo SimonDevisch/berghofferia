@@ -1,6 +1,6 @@
 import koken from "./koken.js";
 import order from "./game.js";
-import { newOrder } from "../main.js";
+
 //dit zal alle logica bevatten om de keuken te genereren
 class keuken {
   //deze class zorgt ervoor dat de keuken wordt aangemaakt,
@@ -13,6 +13,13 @@ class keuken {
   }
 
   setKeuken() {
+    const orderData = JSON.parse(localStorage.getItem("order"));
+    const newOrder = new order(
+      orderData.meat,
+      orderData.veggies,
+      orderData.doneness
+    );
+
     const firstOrderScreen = document.querySelector(".first_orderscreen");
     const kitchenScreen = document.querySelector(".kitchenScreen");
     kitchenScreen.innerHTML = `
@@ -44,16 +51,18 @@ class keuken {
         </div>
         <div class="buttons">
             <div class="intensiteitbuttons">
-                <p>${this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
-    }</p>
+                <p>${
+                  this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
+                }</p>
                 <div class="flexbuttons">
                     <button class="furnaceOneUp" type="button">up</button>
                     <button class="furnaceOneDown" type="button">down</button>
                 </div>
             </div>
             <div class="intensiteitbuttons">
-                <p>${this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
-    }</p>
+                <p>${
+                  this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
+                }</p>
                 <div class="flexbuttons">
                     <button class="furnaceTwoUp" type="button">up</button>
                     <button class="furnaceTwoDown" type="button">down</button>
