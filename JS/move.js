@@ -1,15 +1,21 @@
+import koken from "./koken.js";
 export const move = function () {
   const pans = document.querySelectorAll(".pannen .pan");
   const kookplaten = document.querySelectorAll(".animated-gif .gif");
   const vleesstukken = document.querySelectorAll(".pannen img[src*='raw']");
   const anderePan1 = document.querySelector("#panVuur1");
   const anderePan2 = document.querySelector("#panVuur2");
-
+  const bord = document.querySelector("#bord img")
+  const kokenPlaat1 = koken(false, /* temporary placeholder for lid */JSON.parse(localStorage.getItem("vuurintensiteit1")));
+  const kokenPlaat2 = koken(false, /* temporary placeholder for lid */JSON.parse(localStorage.getItem("vuurintensiteit2")));
   let selectedPan = null;
   let selectedVlees = null;
 
   pans.forEach((pan) => {
     pan.addEventListener("click", function () {
+      if (selectedPan !== null) {
+        selectedPan.classList.remove("selected")
+      }
       selectedPan = pan;
       pan.classList.add("selected");
       kookplaten.forEach(function (kookplaat) {
@@ -17,6 +23,10 @@ export const move = function () {
           kookplaat.classList.add("options");
         }
       });
+      if (selectedVlees !== null) {
+        selectedVlees.classList.remove("selected");
+        selectedVlees = null;
+      }
     });
   });
 
@@ -44,14 +54,20 @@ export const move = function () {
 
   vleesstukken.forEach((vlees) => {
     vlees.addEventListener("click", function () {
+      if (selectedVlees !== null) {
+        selectedVlees.classList.remove("selected");
+      }
       selectedVlees = vlees;
-      vlees.classList.add("selected");
+      selectedVlees.classList.add("selected");
       if (!anderePan1.dataset.bezet) {
         anderePan1.classList.add("options");
       }
       if (!anderePan2.dataset.bezet) {
         anderePan2.classList.add("options");
       }
+      if (!bord.dataset.bezet) {
+        bord.classList.add("options");
+      };
     });
   });
 
@@ -65,6 +81,7 @@ export const move = function () {
 
         if (pan === anderePan1) {
           selectedVlees.classList.add("positie1");
+
         } else if (pan === anderePan2) {
           selectedVlees.classList.add("positie2");
         }
@@ -72,5 +89,25 @@ export const move = function () {
         selectedVlees = null;
       }
     });
+  });
+
+
+  bord.addEventListener("click", function () {
+    if (selectedVlees && !bord.dataset.bezet) {
+      selectedVlees.classList.remove("selected");
+      bord.dataset.bezet = "true";
+      bord.classList.remove("options");
+      bord.src = selectedVlees.src;
+
+    }
+    if (anderePan1.classList.contains("bezet")) {
+      anderePan1.classList.remove("bezet");
+      anderePan1.dataset.bezet = "false";
+    }
+    if (anderePan2.classList.contains("bezet")) {
+      anderePan2.classList.remove("bezet");
+      anderePan2.dataset.bezet = "false";
+    }
+    selectedVlees = null;
   });
 };
