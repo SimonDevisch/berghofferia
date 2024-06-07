@@ -51,24 +51,26 @@ class keuken {
         </div>
         <div class="buttons">
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
-                }</p>
+                <p>${this.vuurintensiteit1 === 0 ? "off" : this.vuurintensiteit1
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceOneUp" type="button">up</button>
                     <button class="furnaceOneDown" type="button">down</button>
                 </div>
             </div>
             <div class="intensiteitbuttons">
-                <p>${
-                  this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
-                }</p>
+                <p>${this.vuurintensiteit2 === 0 ? "off" : this.vuurintensiteit2
+      }</p>
                 <div class="flexbuttons">
                     <button class="furnaceTwoUp" type="button">up</button>
                     <button class="furnaceTwoDown" type="button">down</button>
                 </div>
             </div>
-        </div>`;
+        </div>
+        <div class="bordkeuken bord">
+            <img src="images/bord.png" alt="bord">
+          </div>
+        `;
     //het maakt de button om terug te keren naar het onthaal
     //en verwijderd die om naar de keuken te gaan
     setTimeout(function () {
@@ -90,18 +92,22 @@ class keuken {
     furnaceOneUp.addEventListener("click", () => {
       console.log("vuur 1 up clicked");
       this.updateVuurintensiteit1(1);
+      localStorage.setItem("vuurintensiteit1", JSON.stringify(this.vuurintensiteit1));
     });
 
     furnaceOneDown.addEventListener("click", () => {
       this.updateVuurintensiteit1(-1);
+      localStorage.setItem("vuurintensiteit1", JSON.stringify(this.vuurintensiteit1));
     });
 
     furnaceTwoUp.addEventListener("click", () => {
       this.updateVuurintensiteit2(1);
+      localStorage.setItem("vuurintensiteit2", JSON.stringify(this.vuurintensiteit1));
     });
 
     furnaceTwoDown.addEventListener("click", () => {
       this.updateVuurintensiteit2(-1);
+      localStorage.setItem("vuurintensiteit2", JSON.stringify(this.vuurintensiteit1));
     });
 
     //dit zorgt ervoor dat de button om terug te keren naar het onthaal werkt
