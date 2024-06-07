@@ -1,10 +1,8 @@
 import koken from "./koken.js";
 import order from "./game.js";
-import { newOrder } from "../main.js";
-//dit zal alle logica bevatten om de keuken te genereren
+import { newOrder } from "../main.js"; // Import the newOrder instance
+
 class keuken {
-  //deze class zorgt ervoor dat de keuken wordt aangemaakt,
-  //het zet de events aan
   constructor() {
     this.vuurintensiteit1 = 0;
     this.vuurintensiteit2 = 0;
@@ -58,15 +56,12 @@ class keuken {
                 </div>
             </div>
         </div>`;
-    //het maakt de button om terug te keren naar het onthaal
-    //en verwijderd die om naar de keuken te gaan
     setTimeout(function () {
       firstOrderScreen.classList.add("hidden");
       kitchenScreen.classList.remove("hidden");
     }, 500);
   }
 
-  //dit zoekt naar alle buttons in het document voor het vuur te veranderen
   runKeuken() {
     console.log("started running keuken");
     const furnaceOneUp = document.querySelector(".furnaceOneUp");
@@ -75,7 +70,7 @@ class keuken {
     const furnaceTwoDown = document.querySelector(".furnaceTwoDown");
     const firstOrderScreen = document.querySelector(".first_orderscreen");
     const kitchenScreen = document.querySelector(".kitchenScreen");
-    //hieronder staan alle click events voor het veranderen van het vuur
+
     furnaceOneUp.addEventListener("click", () => {
       console.log("vuur 1 up clicked");
       this.updateVuurintensiteit1(1);
@@ -93,7 +88,6 @@ class keuken {
       this.updateVuurintensiteit2(-1);
     });
 
-    //dit zorgt ervoor dat de button om terug te keren naar het onthaal werkt
     function attachCounterButtonListener() {
       const counterButton = document.querySelector(".counterButton");
       counterButton.addEventListener("click", function () {
@@ -107,7 +101,6 @@ class keuken {
     attachCounterButtonListener();
   }
 
-  //hier staan de events voor het verhogen en verlagen van de vuurintsiteiten
   updateVuurintensiteit1 = (delta) => {
     if (
       this.vuurintensiteit1 + delta >= 0 &&
@@ -167,5 +160,4 @@ class keuken {
   };
 }
 
-//het exporteren van deze file
 export default keuken;
