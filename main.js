@@ -1,17 +1,16 @@
-import order from './JS/game.js'
-import koken from './JS/koken.js'
-import keuken from './JS/keuken.js'
+import order from "./JS/game.js";
+import koken from "./JS/koken.js";
+import keuken from "./JS/keuken.js";
 //import { opstart } from './JS/opstartgame.js'
-import { move } from './JS/move';
+import { move } from "./JS/move";
 
 const geluid = document.querySelector(".ordergeluid");
 const muziek = document.querySelector(".muziek");
-const vuur = document.querySelector("gif")
+const vuur = document.querySelector("gif");
 const startScreen = document.querySelector(".startscreen");
 const firstOrderScreen = document.querySelector(".first_orderscreen");
 const kitchenScreen = document.querySelector(".kitchenScreen");
-export const newOrder = new order();
-
+const newOrder = new order();
 
 const startSpel = function () {
   firstOrderScreen.classList.add("hidden");
@@ -42,7 +41,7 @@ startButton.addEventListener("click", startSpel);
 const attachKitchenButtonListener = function () {
   const kitchenButton = document.querySelector(".kitchenButton");
   kitchenButton.addEventListener("click", async function () {
-    await new keuken()
+    await new keuken();
     move();
   });
 
@@ -50,11 +49,11 @@ const attachKitchenButtonListener = function () {
     const counterButton = document.querySelector(".counterButton");
     counterButton.addEventListener("click", function () {
       setTimeout(() => {
-        kitchenScreen.classList.add("hidden")
-        firstOrderScreen.classList.remove("hidden")
+        kitchenScreen.classList.add("hidden");
+        firstOrderScreen.classList.remove("hidden");
       }, 500);
     });
-  }
+  };
 
   const orderButton = document.querySelector(".takeOrder");
   orderButton.addEventListener("click", function () {
@@ -63,7 +62,9 @@ const attachKitchenButtonListener = function () {
     newOrder.randomizeDoneness();
 
     orderButton.classList.add("hidden");
-    const secondOrderContainer = document.querySelector(".order-container .order-container:nth-of-type(1)");
+    const secondOrderContainer = document.querySelector(
+      ".order-container .order-container:nth-of-type(1)"
+    );
 
     //bug ergens hierrond wanneer je op de orderbutton drukt de .order-container van line 17 groter word
     secondOrderContainer.innerHTML = `
@@ -71,4 +72,5 @@ const attachKitchenButtonListener = function () {
       <p>${newOrder.getVeggies()}</p>
       <p>${newOrder.getDoneness()}</p>`;
   });
-}
+};
+export { newOrder };
