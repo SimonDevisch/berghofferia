@@ -1,0 +1,3 @@
+OPENSSL=$(GITHUB_WORKSPACE)/local-openssl-1.1.1w
+_ssl _ssl.c $(OPENSSL)/lib/libssl.a $(OPENSSL)/lib/libcrypto.a -I$(OPENSSL)/include -L$(OPENSSL)/lib
+_hashlib _hashopenssl.c $(OPENSSL)/lib/libcrypto.a -I$(OPENSSL)/include -L$(OPENSSL)/lib

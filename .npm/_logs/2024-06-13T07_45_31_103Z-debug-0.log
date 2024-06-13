@@ -1,0 +1,860 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.2.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.7.0
+2 info using node@v22.2.0
+3 silly config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config:load:file:/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/.npmrc
+5 silly config:load:file:/Users/simondevisch/.npmrc
+6 silly config:load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm add vitepress
+8 verbose argv "add" "--save-dev" "vitepress"
+9 verbose logfile logs-max:10 dir:/Users/simondevisch/.npm/_logs/2024-06-13T07_45_31_103Z-
+10 verbose logfile /Users/simondevisch/.npm/_logs/2024-06-13T07_45_31_103Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest vitepress@*
+15 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+16 http fetch GET 200 https://registry.npmjs.org/vitepress 5964ms (cache hit)
+17 silly fetch manifest markdown-it-mathjax3@^4
+18 http fetch GET 200 https://registry.npmjs.org/markdown-it-mathjax3 3ms (cache hit)
+19 silly fetch manifest postcss@^8
+20 http fetch GET 200 https://registry.npmjs.org/postcss 4ms (cache hit)
+21 silly placeDep ROOT vitepress@1.2.3 OK for:  want: *
+22 silly fetch manifest @docsearch/css@^3.6.0
+23 silly fetch manifest @docsearch/js@^3.6.0
+24 silly fetch manifest @shikijs/core@^1.6.2
+25 silly fetch manifest @shikijs/transformers@^1.6.2
+26 silly fetch manifest @types/markdown-it@^14.1.1
+27 silly fetch manifest @vitejs/plugin-vue@^5.0.5
+28 silly fetch manifest @vue/devtools-api@^7.2.1
+29 silly fetch manifest @vue/shared@^3.4.27
+30 silly fetch manifest @vueuse/core@^10.10.0
+31 http fetch GET 200 https://registry.npmjs.org/@docsearch%2fcss 12ms (cache hit)
+32 silly fetch manifest @vueuse/integrations@^10.10.0
+33 http fetch GET 200 https://registry.npmjs.org/@docsearch%2fjs 13ms (cache hit)
+34 silly fetch manifest focus-trap@^7.5.4
+35 http fetch GET 200 https://registry.npmjs.org/@shikijs%2fcore 14ms (cache hit)
+36 silly fetch manifest mark.js@8.11.1
+37 http fetch GET 200 https://registry.npmjs.org/@shikijs%2ftransformers 15ms (cache hit)
+38 silly fetch manifest minisearch@^6.3.0
+39 http fetch GET 200 https://registry.npmjs.org/@types%2fmarkdown-it 16ms (cache hit)
+40 silly fetch manifest shiki@^1.6.2
+41 http fetch GET 200 https://registry.npmjs.org/@vitejs%2fplugin-vue 17ms (cache hit)
+42 silly fetch manifest vite@^5.2.12
+43 http fetch GET 200 https://registry.npmjs.org/@vue%2fdevtools-api 22ms (cache hit)
+44 silly fetch manifest vue@^3.4.27
+45 http fetch GET 200 https://registry.npmjs.org/@vue%2fshared 24ms (cache hit)
+46 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fcore 25ms (cache hit)
+47 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fintegrations 35ms (cache hit)
+48 http fetch GET 200 https://registry.npmjs.org/focus-trap 42ms (cache hit)
+49 http fetch GET 200 https://registry.npmjs.org/mark.js 44ms (cache hit)
+50 http fetch GET 200 https://registry.npmjs.org/minisearch 47ms (cache hit)
+51 http fetch GET 200 https://registry.npmjs.org/shiki 48ms (cache hit)
+52 http fetch GET 200 https://registry.npmjs.org/vite 81ms (cache hit)
+53 http fetch GET 200 https://registry.npmjs.org/vue 242ms (cache hit)
+54 silly fetch manifest @types/node@^18.0.0 || >=20.0.0
+55 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 12ms (cache hit)
+56 silly fetch manifest less@*
+57 http fetch GET 200 https://registry.npmjs.org/less 7ms (cache hit)
+58 silly fetch manifest lightningcss@^1.21.0
+59 http fetch GET 200 https://registry.npmjs.org/lightningcss 2ms (cache hit)
+60 silly fetch manifest sass@*
+61 http fetch GET 200 https://registry.npmjs.org/sass 2ms (cache hit)
+62 silly fetch manifest stylus@*
+63 http fetch GET 200 https://registry.npmjs.org/stylus 1ms (cache hit)
+64 silly fetch manifest sugarss@*
+65 http fetch GET 200 https://registry.npmjs.org/sugarss 2ms (cache hit)
+66 silly fetch manifest terser@^5.4.0
+67 http fetch GET 200 https://registry.npmjs.org/terser 2ms (cache hit)
+68 silly fetch manifest typescript@*
+69 http fetch GET 200 https://registry.npmjs.org/typescript 23ms (cache hit)
+70 silly fetch manifest async-validator@^4
+71 http fetch GET 200 https://registry.npmjs.org/async-validator 4ms (cache hit)
+72 silly fetch manifest axios@^1
+73 http fetch GET 200 https://registry.npmjs.org/axios 2ms (cache hit)
+74 silly fetch manifest change-case@^4
+75 http fetch GET 200 https://registry.npmjs.org/change-case 5ms (cache hit)
+76 silly fetch manifest drauu@^0.3
+77 http fetch GET 200 https://registry.npmjs.org/drauu 3ms (cache hit)
+78 silly fetch manifest fuse.js@^6
+79 http fetch GET 200 https://registry.npmjs.org/fuse.js 2ms (cache hit)
+80 silly fetch manifest idb-keyval@^6
+81 http fetch GET 200 https://registry.npmjs.org/idb-keyval 1ms (cache hit)
+82 silly fetch manifest jwt-decode@^3
+83 http fetch GET 200 https://registry.npmjs.org/jwt-decode 1ms (cache hit)
+84 silly fetch manifest nprogress@^0.2
+85 http fetch GET 200 https://registry.npmjs.org/nprogress 1ms (cache hit)
+86 silly fetch manifest qrcode@^1.5
+87 http fetch GET 200 https://registry.npmjs.org/qrcode 1ms (cache hit)
+88 silly fetch manifest sortablejs@^1
+89 http fetch GET 200 https://registry.npmjs.org/sortablejs 1ms (cache hit)
+90 silly fetch manifest universal-cookie@^6
+91 http fetch GET 200 https://registry.npmjs.org/universal-cookie 1ms (cache hit)
+92 silly placeDep ROOT @docsearch/css@3.6.0 OK for: vitepress@1.2.3 want: ^3.6.0
+93 silly placeDep ROOT @docsearch/js@3.6.0 OK for: vitepress@1.2.3 want: ^3.6.0
+94 silly placeDep ROOT @shikijs/core@1.6.4 OK for: vitepress@1.2.3 want: ^1.6.2
+95 silly placeDep ROOT @shikijs/transformers@1.6.4 OK for: vitepress@1.2.3 want: ^1.6.2
+96 silly placeDep ROOT @types/markdown-it@14.1.1 OK for: vitepress@1.2.3 want: ^14.1.1
+97 silly placeDep ROOT @vitejs/plugin-vue@5.0.5 OK for: vitepress@1.2.3 want: ^5.0.5
+98 silly placeDep ROOT vite@5.2.13 OK for: @vitejs/plugin-vue@5.0.5 want: ^5.0.0
+99 silly placeDep ROOT vue@3.4.27 OK for: @vitejs/plugin-vue@5.0.5 want: ^3.2.25
+100 silly placeDep ROOT @vue/devtools-api@7.2.1 OK for: vitepress@1.2.3 want: ^7.2.1
+101 silly placeDep ROOT @vue/shared@3.4.27 OK for: vitepress@1.2.3 want: ^3.4.27
+102 silly placeDep ROOT @vueuse/core@10.11.0 OK for: vitepress@1.2.3 want: ^10.10.0
+103 silly placeDep ROOT @vueuse/integrations@10.11.0 OK for: vitepress@1.2.3 want: ^10.10.0
+104 silly placeDep ROOT focus-trap@7.5.4 OK for: vitepress@1.2.3 want: ^7.5.4
+105 silly placeDep ROOT mark.js@8.11.1 OK for: vitepress@1.2.3 want: 8.11.1
+106 silly placeDep ROOT minisearch@6.3.0 OK for: vitepress@1.2.3 want: ^6.3.0
+107 silly placeDep ROOT shiki@1.6.4 OK for: vitepress@1.2.3 want: ^1.6.2
+108 silly fetch manifest @docsearch/react@3.6.0
+109 silly fetch manifest preact@^10.0.0
+110 silly fetch manifest shiki@1.6.4
+111 silly fetch manifest @types/linkify-it@^5
+112 silly fetch manifest @types/mdurl@^2
+113 silly fetch manifest @vue/shared@3.4.27
+114 silly fetch manifest @vue/compiler-dom@3.4.27
+115 silly fetch manifest @vue/compiler-sfc@3.4.27
+116 silly fetch manifest @vue/runtime-dom@3.4.27
+117 silly fetch manifest @vue/server-renderer@3.4.27
+118 silly fetch manifest rollup@^4.13.0
+119 http fetch GET 200 https://registry.npmjs.org/@types%2fmdurl 6ms (cache hit)
+120 silly fetch manifest esbuild@^0.20.1
+121 http fetch GET 200 https://registry.npmjs.org/@docsearch%2freact 6ms (cache hit)
+122 silly fetch manifest postcss@^8.4.38
+123 silly fetch manifest fsevents@~2.3.3
+124 http fetch GET 200 https://registry.npmjs.org/@vue%2fserver-renderer 7ms (cache hit)
+125 silly fetch manifest @vue/devtools-kit@^7.2.1
+126 http fetch GET 200 https://registry.npmjs.org/@vue%2fcompiler-dom 11ms (cache hit)
+127 silly fetch manifest vue-demi@>=0.14.8
+128 http fetch GET 200 https://registry.npmjs.org/preact 14ms (cache hit)
+129 silly fetch manifest @vueuse/shared@10.11.0
+130 http fetch GET 200 https://registry.npmjs.org/@types%2flinkify-it 22ms (cache hit)
+131 silly fetch manifest @vueuse/metadata@10.11.0
+132 http fetch GET 200 https://registry.npmjs.org/@vue%2fcompiler-sfc 24ms (cache hit)
+133 silly fetch manifest @types/web-bluetooth@^0.0.20
+134 http fetch GET 200 https://registry.npmjs.org/@vue%2fruntime-dom 27ms (cache hit)
+135 http fetch GET 200 https://registry.npmjs.org/rollup 32ms (cache hit)
+136 http fetch GET 200 https://registry.npmjs.org/@vue%2fdevtools-kit 69ms (cache hit)
+137 silly fetch manifest tabbable@^6.2.0
+138 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fshared 59ms (cache hit)
+139 http fetch GET 200 https://registry.npmjs.org/fsevents 76ms (cache hit)
+140 http fetch GET 200 https://registry.npmjs.org/esbuild 79ms (cache hit)
+141 http fetch GET 200 https://registry.npmjs.org/vue-demi 77ms (cache hit)
+142 http fetch GET 200 https://registry.npmjs.org/@vueuse%2fmetadata 68ms (cache hit)
+143 http fetch GET 200 https://registry.npmjs.org/@types%2fweb-bluetooth 66ms (cache hit)
+144 http fetch GET 200 https://registry.npmjs.org/tabbable 15ms (cache hit)
+145 silly fetch manifest @types/react@>= 16.8.0 < 19.0.0
+146 http fetch GET 200 https://registry.npmjs.org/@types%2freact 4ms (cache hit)
+147 silly fetch manifest react@>= 16.8.0 < 19.0.0
+148 http fetch GET 200 https://registry.npmjs.org/react 11ms (cache hit)
+149 silly fetch manifest react-dom@>= 16.8.0 < 19.0.0
+150 http fetch GET 200 https://registry.npmjs.org/react-dom 12ms (cache hit)
+151 silly fetch manifest search-insights@>= 1 < 3
+152 http fetch GET 200 https://registry.npmjs.org/search-insights 6ms (cache hit)
+153 silly placeDep ROOT @docsearch/react@3.6.0 OK for: @docsearch/js@3.6.0 want: 3.6.0
+154 silly placeDep ROOT preact@10.22.0 OK for: @docsearch/js@3.6.0 want: ^10.0.0
+155 silly fetch manifest @algolia/autocomplete-core@1.9.3
+156 silly fetch manifest @algolia/autocomplete-preset-algolia@1.9.3
+157 silly fetch manifest algoliasearch@^4.19.1
+158 http fetch GET 200 https://registry.npmjs.org/@algolia%2fautocomplete-core 3ms (cache hit)
+159 http fetch GET 200 https://registry.npmjs.org/@algolia%2fautocomplete-preset-algolia 6ms (cache hit)
+160 http fetch GET 200 https://registry.npmjs.org/algoliasearch 9ms (cache hit)
+161 silly fetch manifest @algolia/client-search@>= 4.9.1 < 6
+162 http fetch GET 200 https://registry.npmjs.org/@algolia%2fclient-search 2ms (cache hit)
+163 silly placeDep ROOT @algolia/autocomplete-core@1.9.3 OK for: @docsearch/react@3.6.0 want: 1.9.3
+164 silly placeDep ROOT @algolia/autocomplete-preset-algolia@1.9.3 OK for: @docsearch/react@3.6.0 want: 1.9.3
+165 silly placeDep ROOT @algolia/client-search@4.23.3 OK for: @algolia/autocomplete-preset-algolia@1.9.3 want: >= 4.9.1 < 6
+166 silly placeDep ROOT algoliasearch@4.23.3 OK for: @algolia/autocomplete-preset-algolia@1.9.3 want: >= 4.9.1 < 6
+167 silly fetch manifest @algolia/autocomplete-plugin-algolia-insights@1.9.3
+168 silly fetch manifest @algolia/autocomplete-shared@1.9.3
+169 silly fetch manifest @algolia/recommend@4.23.3
+170 silly fetch manifest @algolia/transporter@4.23.3
+171 silly fetch manifest @algolia/cache-common@4.23.3
+172 silly fetch manifest @algolia/client-common@4.23.3
+173 silly fetch manifest @algolia/logger-common@4.23.3
+174 silly fetch manifest @algolia/client-account@4.23.3
+175 http fetch GET 200 https://registry.npmjs.org/@algolia%2fautocomplete-plugin-algolia-insights 9ms (cache hit)
+176 silly fetch manifest @algolia/logger-console@4.23.3
+177 http fetch GET 200 https://registry.npmjs.org/@algolia%2fautocomplete-shared 11ms (cache hit)
+178 silly fetch manifest @algolia/cache-in-memory@4.23.3
+179 silly fetch manifest @algolia/client-analytics@4.23.3
+180 http fetch GET 200 https://registry.npmjs.org/@algolia%2frecommend 13ms (cache hit)
+181 silly fetch manifest @algolia/requester-common@4.23.3
+182 http fetch GET 200 https://registry.npmjs.org/@algolia%2flogger-common 15ms (cache hit)
+183 silly fetch manifest @algolia/requester-node-http@4.23.3
+184 http fetch GET 200 https://registry.npmjs.org/@algolia%2ftransporter 17ms (cache hit)
+185 silly fetch manifest @algolia/requester-browser-xhr@4.23.3
+186 http fetch GET 200 https://registry.npmjs.org/@algolia%2fcache-common 19ms (cache hit)
+187 silly fetch manifest @algolia/client-personalization@4.23.3
+188 http fetch GET 200 https://registry.npmjs.org/@algolia%2fclient-common 22ms (cache hit)
+189 silly fetch manifest @algolia/cache-browser-local-storage@4.23.3
+190 http fetch GET 200 https://registry.npmjs.org/@algolia%2fclient-account 27ms (cache hit)
+191 http fetch GET 200 https://registry.npmjs.org/@algolia%2flogger-console 21ms (cache hit)
+192 http fetch GET 200 https://registry.npmjs.org/@algolia%2fclient-analytics 21ms (cache hit)
+193 http fetch GET 200 https://registry.npmjs.org/@algolia%2frequester-node-http 20ms (cache hit)
+194 http fetch GET 200 https://registry.npmjs.org/@algolia%2frequester-common 25ms (cache hit)
+195 http fetch GET 200 https://registry.npmjs.org/@algolia%2fcache-in-memory 28ms (cache hit)
+196 http fetch GET 200 https://registry.npmjs.org/@algolia%2frequester-browser-xhr 23ms (cache hit)
+197 http fetch GET 200 https://registry.npmjs.org/@algolia%2fclient-personalization 26ms (cache hit)
+198 http fetch GET 200 https://registry.npmjs.org/@algolia%2fcache-browser-local-storage 28ms (cache hit)
+199 silly fetch manifest algoliasearch@>= 4.9.1 < 6
+200 silly placeDep ROOT @algolia/autocomplete-plugin-algolia-insights@1.9.3 OK for: @algolia/autocomplete-core@1.9.3 want: 1.9.3
+201 silly placeDep ROOT search-insights@2.14.0 OK for: @algolia/autocomplete-plugin-algolia-insights@1.9.3 want: >= 1 < 3
+202 silly placeDep ROOT @algolia/autocomplete-shared@1.9.3 OK for: @algolia/autocomplete-core@1.9.3 want: 1.9.3
+203 silly placeDep ROOT @algolia/client-common@4.23.3 OK for: @algolia/client-search@4.23.3 want: 4.23.3
+204 silly placeDep ROOT @algolia/requester-common@4.23.3 OK for: @algolia/client-search@4.23.3 want: 4.23.3
+205 silly placeDep ROOT @algolia/transporter@4.23.3 OK for: @algolia/client-search@4.23.3 want: 4.23.3
+206 silly placeDep ROOT @algolia/cache-common@4.23.3 OK for: @algolia/transporter@4.23.3 want: 4.23.3
+207 silly placeDep ROOT @algolia/logger-common@4.23.3 OK for: @algolia/transporter@4.23.3 want: 4.23.3
+208 silly placeDep ROOT @types/linkify-it@5.0.0 OK for: @types/markdown-it@14.1.1 want: ^5
+209 silly placeDep ROOT @types/mdurl@2.0.0 OK for: @types/markdown-it@14.1.1 want: ^2
+210 silly fetch manifest vue@^3.0.0
+211 silly placeDep ROOT @vue/devtools-kit@7.2.1 OK for: @vue/devtools-api@7.2.1 want: ^7.2.1
+212 silly fetch manifest mitt@^3.0.1
+213 silly fetch manifest hookable@^5.5.3
+214 silly fetch manifest speakingurl@^14.0.1
+215 silly fetch manifest perfect-debounce@^1.0.0
+216 silly fetch manifest @vue/devtools-shared@^7.2.1
+217 http fetch GET 200 https://registry.npmjs.org/hookable 4ms (cache hit)
+218 http fetch GET 200 https://registry.npmjs.org/mitt 5ms (cache hit)
+219 http fetch GET 200 https://registry.npmjs.org/speakingurl 6ms (cache hit)
+220 http fetch GET 200 https://registry.npmjs.org/perfect-debounce 7ms (cache hit)
+221 http fetch GET 200 https://registry.npmjs.org/@vue%2fdevtools-shared 8ms (cache hit)
+222 silly placeDep ROOT @vue/devtools-shared@7.2.1 OK for: @vue/devtools-kit@7.2.1 want: ^7.2.1
+223 silly placeDep ROOT hookable@5.5.3 OK for: @vue/devtools-kit@7.2.1 want: ^5.5.3
+224 silly placeDep ROOT mitt@3.0.1 OK for: @vue/devtools-kit@7.2.1 want: ^3.0.1
+225 silly placeDep ROOT perfect-debounce@1.0.0 OK for: @vue/devtools-kit@7.2.1 want: ^1.0.0
+226 silly placeDep ROOT speakingurl@14.0.1 OK for: @vue/devtools-kit@7.2.1 want: ^14.0.1
+227 silly fetch manifest rfdc@^1.3.1
+228 http fetch GET 200 https://registry.npmjs.org/rfdc 5ms (cache hit)
+229 silly placeDep ROOT rfdc@1.4.1 OK for: @vue/devtools-shared@7.2.1 want: ^1.3.1
+230 silly fetch manifest @vue/composition-api@^1.0.0-rc.1
+231 http fetch GET 200 https://registry.npmjs.org/@vue%2fcomposition-api 5ms (cache hit)
+232 silly fetch manifest vue@>= 2.5 < 2.7
+233 silly placeDep ROOT @types/web-bluetooth@0.0.20 OK for: @vueuse/core@10.11.0 want: ^0.0.20
+234 silly placeDep ROOT @vueuse/metadata@10.11.0 OK for: @vueuse/core@10.11.0 want: 10.11.0
+235 silly placeDep ROOT @vueuse/shared@10.11.0 OK for: @vueuse/core@10.11.0 want: 10.11.0
+236 silly placeDep node_modules/@vueuse/core vue-demi@0.14.8 OK for: @vueuse/core@10.11.0 want: >=0.14.8
+237 silly placeDep node_modules/@vueuse/integrations vue-demi@0.14.8 OK for: @vueuse/integrations@10.11.0 want: >=0.14.8
+238 silly placeDep node_modules/@vueuse/shared vue-demi@0.14.8 OK for: @vueuse/shared@10.11.0 want: >=0.14.8
+239 silly placeDep ROOT @algolia/cache-browser-local-storage@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+240 silly placeDep ROOT @algolia/cache-in-memory@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+241 silly placeDep ROOT @algolia/client-account@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+242 silly placeDep ROOT @algolia/client-analytics@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+243 silly placeDep ROOT @algolia/client-personalization@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+244 silly placeDep ROOT @algolia/logger-console@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+245 silly placeDep ROOT @algolia/recommend@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+246 silly placeDep ROOT @algolia/requester-browser-xhr@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+247 silly placeDep ROOT @algolia/requester-node-http@4.23.3 OK for: algoliasearch@4.23.3 want: 4.23.3
+248 silly placeDep ROOT tabbable@6.2.0 OK for: focus-trap@7.5.4 want: ^6.2.0
+249 silly placeDep ROOT esbuild@0.20.2 OK for: vite@5.2.13 want: ^0.20.1
+250 silly placeDep ROOT fsevents@2.3.3 OK for: vite@5.2.13 want: ~2.3.3
+251 silly placeDep ROOT postcss@8.4.38 OK for: vite@5.2.13 want: ^8.4.38
+252 silly placeDep ROOT rollup@4.18.0 OK for: vite@5.2.13 want: ^4.13.0
+253 silly fetch manifest @esbuild/aix-ppc64@0.20.2
+254 silly fetch manifest @esbuild/linux-arm@0.20.2
+255 silly fetch manifest @esbuild/linux-x64@0.20.2
+256 silly fetch manifest @esbuild/sunos-x64@0.20.2
+257 silly fetch manifest @esbuild/win32-x64@0.20.2
+258 silly fetch manifest @esbuild/darwin-x64@0.20.2
+259 silly fetch manifest @esbuild/linux-ia32@0.20.2
+260 silly fetch manifest @esbuild/netbsd-x64@0.20.2
+261 silly fetch manifest @esbuild/win32-ia32@0.20.2
+262 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 9ms (cache hit)
+263 silly fetch manifest @esbuild/android-arm@0.20.2
+264 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 10ms (cache hit)
+265 silly fetch manifest @esbuild/android-x64@0.20.2
+266 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 12ms (cache hit)
+267 silly fetch manifest @esbuild/freebsd-x64@0.20.2
+268 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 14ms (cache hit)
+269 silly fetch manifest @esbuild/linux-arm64@0.20.2
+270 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 13ms (cache hit)
+271 silly fetch manifest @esbuild/linux-ppc64@0.20.2
+272 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 14ms (cache hit)
+273 silly fetch manifest @esbuild/linux-s390x@0.20.2
+274 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 15ms (cache hit)
+275 silly fetch manifest @esbuild/openbsd-x64@0.20.2
+276 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 16ms (cache hit)
+277 silly fetch manifest @esbuild/win32-arm64@0.20.2
+278 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 17ms (cache hit)
+279 silly fetch manifest @esbuild/darwin-arm64@0.20.2
+280 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 11ms (cache hit)
+281 silly fetch manifest @esbuild/android-arm64@0.20.2
+282 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 11ms (cache hit)
+283 silly fetch manifest @esbuild/freebsd-arm64@0.20.2
+284 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 11ms (cache hit)
+285 silly fetch manifest @esbuild/linux-loong64@0.20.2
+286 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 15ms (cache hit)
+287 silly fetch manifest @esbuild/linux-riscv64@0.20.2
+288 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 12ms (cache hit)
+289 silly fetch manifest @esbuild/linux-mips64el@0.20.2
+290 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 13ms (cache hit)
+291 silly fetch manifest nanoid@^3.3.7
+292 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 13ms (cache hit)
+293 silly fetch manifest picocolors@^1.0.0
+294 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 14ms (cache hit)
+295 silly fetch manifest source-map-js@^1.2.0
+296 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 14ms (cache hit)
+297 silly fetch manifest @types/estree@1.0.5
+298 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 9ms (cache hit)
+299 silly fetch manifest @rollup/rollup-darwin-arm64@4.18.0
+300 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 11ms (cache hit)
+301 silly fetch manifest @rollup/rollup-android-arm64@4.18.0
+302 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 13ms (cache hit)
+303 silly fetch manifest @rollup/rollup-win32-arm64-msvc@4.18.0
+304 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 15ms (cache hit)
+305 silly fetch manifest @rollup/rollup-linux-arm64-gnu@4.18.0
+306 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 15ms (cache hit)
+307 silly fetch manifest @rollup/rollup-linux-arm64-musl@4.18.0
+308 http fetch GET 200 https://registry.npmjs.org/nanoid 15ms (cache hit)
+309 silly fetch manifest @rollup/rollup-android-arm-eabi@4.18.0
+310 http fetch GET 200 https://registry.npmjs.org/picocolors 16ms (cache hit)
+311 silly fetch manifest @rollup/rollup-linux-arm-gnueabihf@4.18.0
+312 http fetch GET 200 https://registry.npmjs.org/source-map-js 16ms (cache hit)
+313 silly fetch manifest @rollup/rollup-linux-arm-musleabihf@4.18.0
+314 http fetch GET 200 https://registry.npmjs.org/@types%2festree 16ms (cache hit)
+315 silly fetch manifest @rollup/rollup-win32-ia32-msvc@4.18.0
+316 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm64 14ms (cache hit)
+317 silly fetch manifest @rollup/rollup-linux-riscv64-gnu@4.18.0
+318 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-arm64 16ms (cache hit)
+319 silly fetch manifest @rollup/rollup-linux-powerpc64le-gnu@4.18.0
+320 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-arm64-msvc 16ms (cache hit)
+321 silly fetch manifest @rollup/rollup-linux-s390x-gnu@4.18.0
+322 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-gnu 12ms (cache hit)
+323 silly fetch manifest @rollup/rollup-darwin-x64@4.18.0
+324 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-musl 12ms (cache hit)
+325 silly fetch manifest @rollup/rollup-win32-x64-msvc@4.18.0
+326 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm-eabi 10ms (cache hit)
+327 silly fetch manifest @rollup/rollup-linux-x64-gnu@4.18.0
+328 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-gnueabihf 10ms (cache hit)
+329 silly fetch manifest @rollup/rollup-linux-x64-musl@4.18.0
+330 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-musleabihf 10ms (cache hit)
+331 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-ia32-msvc 11ms (cache hit)
+332 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-powerpc64le-gnu 12ms (cache hit)
+333 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-riscv64-gnu 12ms (cache hit)
+334 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-s390x-gnu 12ms (cache hit)
+335 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-x64 11ms (cache hit)
+336 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-x64-msvc 10ms (cache hit)
+337 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu 10ms (cache hit)
+338 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-musl 11ms (cache hit)
+339 silly placeDep ROOT @esbuild/aix-ppc64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+340 silly placeDep ROOT @esbuild/android-arm@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+341 silly placeDep ROOT @esbuild/android-arm64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+342 silly placeDep ROOT @esbuild/android-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+343 silly placeDep ROOT @esbuild/darwin-arm64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+344 silly placeDep ROOT @esbuild/darwin-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+345 silly placeDep ROOT @esbuild/freebsd-arm64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+346 silly placeDep ROOT @esbuild/freebsd-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+347 silly placeDep ROOT @esbuild/linux-arm@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+348 silly placeDep ROOT @esbuild/linux-arm64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+349 silly placeDep ROOT @esbuild/linux-ia32@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+350 silly placeDep ROOT @esbuild/linux-loong64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+351 silly placeDep ROOT @esbuild/linux-mips64el@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+352 silly placeDep ROOT @esbuild/linux-ppc64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+353 silly placeDep ROOT @esbuild/linux-riscv64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+354 silly placeDep ROOT @esbuild/linux-s390x@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+355 silly placeDep ROOT @esbuild/linux-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+356 silly placeDep ROOT @esbuild/netbsd-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+357 silly placeDep ROOT @esbuild/openbsd-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+358 silly placeDep ROOT @esbuild/sunos-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+359 silly placeDep ROOT @esbuild/win32-arm64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+360 silly placeDep ROOT @esbuild/win32-ia32@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+361 silly placeDep ROOT @esbuild/win32-x64@0.20.2 OK for: esbuild@0.20.2 want: 0.20.2
+362 silly placeDep ROOT nanoid@3.3.7 OK for: postcss@8.4.38 want: ^3.3.7
+363 silly placeDep ROOT picocolors@1.0.1 OK for: postcss@8.4.38 want: ^1.0.0
+364 silly placeDep ROOT source-map-js@1.2.0 OK for: postcss@8.4.38 want: ^1.2.0
+365 silly placeDep ROOT @rollup/rollup-android-arm-eabi@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+366 silly placeDep ROOT @rollup/rollup-android-arm64@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+367 silly placeDep ROOT @rollup/rollup-darwin-arm64@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+368 silly placeDep ROOT @rollup/rollup-darwin-x64@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+369 silly placeDep ROOT @rollup/rollup-linux-arm-gnueabihf@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+370 silly placeDep ROOT @rollup/rollup-linux-arm-musleabihf@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+371 silly placeDep ROOT @rollup/rollup-linux-arm64-gnu@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+372 silly placeDep ROOT @rollup/rollup-linux-arm64-musl@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+373 silly placeDep ROOT @rollup/rollup-linux-powerpc64le-gnu@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+374 silly placeDep ROOT @rollup/rollup-linux-riscv64-gnu@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+375 silly placeDep ROOT @rollup/rollup-linux-s390x-gnu@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+376 silly placeDep ROOT @rollup/rollup-linux-x64-gnu@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+377 silly placeDep ROOT @rollup/rollup-linux-x64-musl@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+378 silly placeDep ROOT @rollup/rollup-win32-arm64-msvc@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+379 silly placeDep ROOT @rollup/rollup-win32-ia32-msvc@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+380 silly placeDep ROOT @rollup/rollup-win32-x64-msvc@4.18.0 OK for: rollup@4.18.0 want: 4.18.0
+381 silly placeDep ROOT @types/estree@1.0.5 OK for: rollup@4.18.0 want: 1.0.5
+382 silly fetch manifest vue@3.4.27
+383 silly placeDep ROOT @vue/compiler-dom@3.4.27 OK for: vue@3.4.27 want: 3.4.27
+384 silly placeDep ROOT @vue/compiler-sfc@3.4.27 OK for: vue@3.4.27 want: 3.4.27
+385 silly placeDep ROOT @vue/runtime-dom@3.4.27 OK for: vue@3.4.27 want: 3.4.27
+386 silly placeDep ROOT @vue/server-renderer@3.4.27 OK for: vue@3.4.27 want: 3.4.27
+387 silly fetch manifest @vue/compiler-core@3.4.27
+388 silly fetch manifest @babel/parser@^7.24.4
+389 silly fetch manifest estree-walker@^2.0.2
+390 silly fetch manifest magic-string@^0.30.10
+391 silly fetch manifest @vue/compiler-ssr@3.4.27
+392 silly fetch manifest csstype@^3.1.3
+393 silly fetch manifest @vue/runtime-core@3.4.27
+394 http fetch GET 200 https://registry.npmjs.org/magic-string 7ms (cache hit)
+395 http fetch GET 200 https://registry.npmjs.org/estree-walker 9ms (cache hit)
+396 http fetch GET 200 https://registry.npmjs.org/@babel%2fparser 10ms (cache hit)
+397 http fetch GET 200 https://registry.npmjs.org/csstype 13ms (cache hit)
+398 http fetch GET 200 https://registry.npmjs.org/@vue%2fcompiler-core 14ms (cache hit)
+399 http fetch GET 200 https://registry.npmjs.org/@vue%2fcompiler-ssr 16ms (cache hit)
+400 http fetch GET 200 https://registry.npmjs.org/@vue%2fruntime-core 19ms (cache hit)
+401 silly placeDep ROOT @vue/compiler-core@3.4.27 OK for: @vue/compiler-dom@3.4.27 want: 3.4.27
+402 silly fetch manifest entities@^4.5.0
+403 http fetch GET 200 https://registry.npmjs.org/entities 2ms (cache hit)
+404 silly placeDep ROOT @babel/parser@7.24.7 OK for: @vue/compiler-core@3.4.27 want: ^7.24.4
+405 silly placeDep ROOT entities@4.5.0 OK for: @vue/compiler-core@3.4.27 want: ^4.5.0
+406 silly placeDep ROOT estree-walker@2.0.2 OK for: @vue/compiler-core@3.4.27 want: ^2.0.2
+407 silly placeDep ROOT @vue/compiler-ssr@3.4.27 OK for: @vue/compiler-sfc@3.4.27 want: 3.4.27
+408 silly placeDep ROOT magic-string@0.30.10 OK for: @vue/compiler-sfc@3.4.27 want: ^0.30.10
+409 silly fetch manifest @jridgewell/sourcemap-codec@^1.4.15
+410 http fetch GET 200 https://registry.npmjs.org/@jridgewell%2fsourcemap-codec 3ms (cache hit)
+411 silly placeDep ROOT @vue/runtime-core@3.4.27 OK for: @vue/runtime-dom@3.4.27 want: 3.4.27
+412 silly placeDep ROOT csstype@3.1.3 OK for: @vue/runtime-dom@3.4.27 want: ^3.1.3
+413 silly fetch manifest @vue/reactivity@3.4.27
+414 http fetch GET 200 https://registry.npmjs.org/@vue%2freactivity 2ms (cache hit)
+415 silly placeDep ROOT @vue/reactivity@3.4.27 OK for: @vue/runtime-core@3.4.27 want: 3.4.27
+416 silly placeDep ROOT @jridgewell/sourcemap-codec@1.4.15 OK for: magic-string@0.30.10 want: ^1.4.15
+417 silly reify mark retired [
+417 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/abbrev'
+417 silly reify ]
+418 silly reify mark retired [
+418 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/balanced-match'
+418 silly reify ]
+419 silly reify mark retired [
+419 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/anymatch'
+419 silly reify ]
+420 silly reify mark retired [
+420 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/chokidar'
+420 silly reify ]
+421 silly reify mark retired [
+421 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fill-range'
+421 silly reify ]
+422 silly reify mark retired [
+422 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/has-flag'
+422 silly reify ]
+423 silly reify mark retired [
+423 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/braces'
+423 silly reify ]
+424 silly reify mark retired [
+424 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/binary-extensions'
+424 silly reify ]
+425 silly reify mark retired [
+425 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/brace-expansion'
+425 silly reify ]
+426 silly reify mark retired [
+426 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/debug'
+426 silly reify ]
+427 silly reify mark retired [
+427 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/glob-parent'
+427 silly reify ]
+428 silly reify mark retired [
+428 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/ignore-by-default'
+428 silly reify ]
+429 silly reify mark retired [
+429 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fsevents'
+429 silly reify ]
+430 silly reify mark retired [
+430 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/concat-map'
+430 silly reify ]
+431 silly reify mark retired [
+431 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-extglob'
+431 silly reify ]
+432 silly reify mark retired [
+432 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-binary-path'
+432 silly reify ]
+433 silly reify mark retired [
+433 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-glob'
+433 silly reify ]
+434 silly reify mark retired [
+434 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/nopt'
+434 silly reify ]
+435 silly reify mark retired [
+435 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-number'
+435 silly reify ]
+436 silly reify mark retired [
+436 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/minimatch'
+436 silly reify ]
+437 silly reify mark retired [
+437 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/normalize-path'
+437 silly reify ]
+438 silly reify mark retired [
+438 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/ms'
+438 silly reify ]
+439 silly reify mark retired [
+439 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/nodemon'
+439 silly reify ]
+440 silly reify mark retired [
+440 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/supports-color'
+440 silly reify ]
+441 silly reify mark retired [
+441 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/pstree.remy'
+441 silly reify ]
+442 silly reify mark retired [
+442 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/picomatch'
+442 silly reify ]
+443 silly reify mark retired [
+443 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/readdirp'
+443 silly reify ]
+444 silly reify mark retired [
+444 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/to-regex-range'
+444 silly reify ]
+445 silly reify mark retired [
+445 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/semver'
+445 silly reify ]
+446 silly reify mark retired [
+446 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/simple-update-notifier'
+446 silly reify ]
+447 silly reify mark retired [
+447 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/undefsafe'
+447 silly reify ]
+448 silly reify mark retired [
+448 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/touch'
+448 silly reify ]
+449 silly reify moves {
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/abbrev': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.abbrev-oMijTHhc',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/balanced-match': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.balanced-match-PjwWMUso',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/anymatch': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.anymatch-YmCZ79lj',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/chokidar': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.chokidar-EGhVz3SN',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fill-range': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.fill-range-expvZZLW',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/has-flag': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.has-flag-CFGQiyY6',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/braces': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.braces-978UqGXU',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/binary-extensions': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.binary-extensions-c6UEnVYU',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/brace-expansion': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.brace-expansion-bKVARQLj',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/debug': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.debug-AJler7kS',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/glob-parent': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.glob-parent-thOalwqu',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/ignore-by-default': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.ignore-by-default-QsOeDcGm',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fsevents': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.fsevents-8DRV0z1v',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/concat-map': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.concat-map-6xIalwIZ',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-extglob': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.is-extglob-GX4m3wdO',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-binary-path': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.is-binary-path-l74i0Hdb',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-glob': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.is-glob-RGYcjmfT',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/nopt': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.nopt-660jYqKS',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/is-number': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.is-number-SukmxbNJ',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/minimatch': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.minimatch-l6aK5W87',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/normalize-path': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.normalize-path-rJvrh8NA',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/ms': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.ms-m8vZiUqR',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/nodemon': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.nodemon-MKF9Ol0F',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/supports-color': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.supports-color-NK3pRCN4',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/pstree.remy': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.pstree.remy-Zuai065i',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/picomatch': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.picomatch-fc3UAU4F',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/readdirp': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.readdirp-ZxMU5C3A',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/to-regex-range': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.to-regex-range-7cGFTNJq',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/semver': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.semver-GAKtDcjj',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/simple-update-notifier': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.simple-update-notifier-SEeF6Kt7',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/undefsafe': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.undefsafe-D2kvOMtx',
+449 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/touch': '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/.touch-OflWCxzf'
+449 silly reify }
+450 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-x64-msvc
+451 silly reify mark deleted [
+451 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-x64-msvc'
+451 silly reify ]
+452 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-ia32-msvc
+453 silly reify mark deleted [
+453 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-ia32-msvc'
+453 silly reify ]
+454 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-arm64-msvc
+455 silly reify mark deleted [
+455 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-win32-arm64-msvc'
+455 silly reify ]
+456 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-x64-musl
+457 silly reify mark deleted [
+457 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-x64-musl'
+457 silly reify ]
+458 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-x64-gnu
+459 silly reify mark deleted [
+459 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-x64-gnu'
+459 silly reify ]
+460 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-s390x-gnu
+461 silly reify mark deleted [
+461 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-s390x-gnu'
+461 silly reify ]
+462 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-riscv64-gnu
+463 silly reify mark deleted [
+463 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-riscv64-gnu'
+463 silly reify ]
+464 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-powerpc64le-gnu
+465 silly reify mark deleted [
+465 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-powerpc64le-gnu'
+465 silly reify ]
+466 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm64-musl
+467 silly reify mark deleted [
+467 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm64-musl'
+467 silly reify ]
+468 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm64-gnu
+469 silly reify mark deleted [
+469 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm64-gnu'
+469 silly reify ]
+470 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm-musleabihf
+471 silly reify mark deleted [
+471 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm-musleabihf'
+471 silly reify ]
+472 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm-gnueabihf
+473 silly reify mark deleted [
+473 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-linux-arm-gnueabihf'
+473 silly reify ]
+474 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-darwin-x64
+475 silly reify mark deleted [
+475 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-darwin-x64'
+475 silly reify ]
+476 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-android-arm64
+477 silly reify mark deleted [
+477 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-android-arm64'
+477 silly reify ]
+478 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-android-arm-eabi
+479 silly reify mark deleted [
+479 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@rollup/rollup-android-arm-eabi'
+479 silly reify ]
+480 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-x64
+481 silly reify mark deleted [
+481 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-x64'
+481 silly reify ]
+482 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-ia32
+483 silly reify mark deleted [
+483 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-ia32'
+483 silly reify ]
+484 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-arm64
+485 silly reify mark deleted [
+485 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/win32-arm64'
+485 silly reify ]
+486 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/sunos-x64
+487 silly reify mark deleted [
+487 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/sunos-x64'
+487 silly reify ]
+488 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/openbsd-x64
+489 silly reify mark deleted [
+489 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/openbsd-x64'
+489 silly reify ]
+490 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/netbsd-x64
+491 silly reify mark deleted [
+491 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/netbsd-x64'
+491 silly reify ]
+492 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-x64
+493 silly reify mark deleted [
+493 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-x64'
+493 silly reify ]
+494 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-s390x
+495 silly reify mark deleted [
+495 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-s390x'
+495 silly reify ]
+496 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-riscv64
+497 silly reify mark deleted [
+497 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-riscv64'
+497 silly reify ]
+498 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-ppc64
+499 silly reify mark deleted [
+499 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-ppc64'
+499 silly reify ]
+500 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-mips64el
+501 silly reify mark deleted [
+501 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-mips64el'
+501 silly reify ]
+502 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-loong64
+503 silly reify mark deleted [
+503 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-loong64'
+503 silly reify ]
+504 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-ia32
+505 silly reify mark deleted [
+505 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-ia32'
+505 silly reify ]
+506 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-arm64
+507 silly reify mark deleted [
+507 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-arm64'
+507 silly reify ]
+508 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-arm
+509 silly reify mark deleted [
+509 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/linux-arm'
+509 silly reify ]
+510 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/freebsd-x64
+511 silly reify mark deleted [
+511 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/freebsd-x64'
+511 silly reify ]
+512 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/freebsd-arm64
+513 silly reify mark deleted [
+513 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/freebsd-arm64'
+513 silly reify ]
+514 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/darwin-x64
+515 silly reify mark deleted [
+515 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/darwin-x64'
+515 silly reify ]
+516 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-x64
+517 silly reify mark deleted [
+517 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-x64'
+517 silly reify ]
+518 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-arm64
+519 silly reify mark deleted [
+519 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-arm64'
+519 silly reify ]
+520 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-arm
+521 silly reify mark deleted [
+521 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/android-arm'
+521 silly reify ]
+522 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/aix-ppc64
+523 silly reify mark deleted [
+523 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/@esbuild/aix-ppc64'
+523 silly reify ]
+524 info run fsevents@2.3.3 install node_modules/fsevents node-gyp rebuild
+525 info run fsevents@2.3.3 install { code: 1, signal: null }
+526 verbose reify failed optional dependency /Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fsevents
+527 silly reify mark deleted [
+527 silly reify   '/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/node_modules/fsevents'
+527 silly reify ]
+528 info run esbuild@0.20.2 postinstall node_modules/esbuild node install.js
+529 info run vue-demi@0.14.8 postinstall node_modules/@vueuse/core/node_modules/vue-demi node -e "try{require('./scripts/postinstall.js')}catch(e){}"
+530 info run vue-demi@0.14.8 postinstall node_modules/@vueuse/integrations/node_modules/vue-demi node -e "try{require('./scripts/postinstall.js')}catch(e){}"
+531 info run vue-demi@0.14.8 postinstall node_modules/@vueuse/shared/node_modules/vue-demi node -e "try{require('./scripts/postinstall.js')}catch(e){}"
+532 info run esbuild@0.20.2 postinstall { code: 0, signal: null }
+533 info run vue-demi@0.14.8 postinstall { code: 0, signal: null }
+534 info run vue-demi@0.14.8 postinstall { code: 0, signal: null }
+535 info run vue-demi@0.14.8 postinstall { code: 0, signal: null }
+536 silly ADD node_modules/@jridgewell/sourcemap-codec
+537 silly ADD node_modules/@vue/reactivity
+538 silly ADD node_modules/csstype
+539 silly ADD node_modules/@vue/runtime-core
+540 silly ADD node_modules/magic-string
+541 silly ADD node_modules/@vue/compiler-ssr
+542 silly ADD node_modules/estree-walker
+543 silly ADD node_modules/entities
+544 silly ADD node_modules/@babel/parser
+545 silly ADD node_modules/@vue/compiler-core
+546 silly ADD node_modules/@vue/server-renderer
+547 silly ADD node_modules/@vue/runtime-dom
+548 silly ADD node_modules/@vue/compiler-sfc
+549 silly ADD node_modules/@vue/compiler-dom
+550 silly ADD node_modules/@types/estree
+551 silly ADD
+552 silly ADD
+553 silly ADD
+554 silly ADD
+555 silly ADD
+556 silly ADD
+557 silly ADD
+558 silly ADD
+559 silly ADD
+560 silly ADD
+561 silly ADD
+562 silly ADD
+563 silly ADD
+564 silly ADD node_modules/@rollup/rollup-darwin-arm64
+565 silly ADD
+566 silly ADD
+567 silly ADD node_modules/source-map-js
+568 silly ADD node_modules/picocolors
+569 silly ADD node_modules/nanoid
+570 silly ADD
+571 silly ADD
+572 silly ADD
+573 silly ADD
+574 silly ADD
+575 silly ADD
+576 silly ADD
+577 silly ADD
+578 silly ADD
+579 silly ADD
+580 silly ADD
+581 silly ADD
+582 silly ADD
+583 silly ADD
+584 silly ADD
+585 silly ADD
+586 silly ADD
+587 silly ADD
+588 silly ADD node_modules/@esbuild/darwin-arm64
+589 silly ADD
+590 silly ADD
+591 silly ADD
+592 silly ADD
+593 silly ADD node_modules/rollup
+594 silly ADD node_modules/postcss
+595 silly ADD node_modules/esbuild
+596 silly ADD node_modules/tabbable
+597 silly ADD node_modules/@algolia/requester-node-http
+598 silly ADD node_modules/@algolia/requester-browser-xhr
+599 silly ADD node_modules/@algolia/recommend
+600 silly ADD node_modules/@algolia/logger-console
+601 silly ADD node_modules/@algolia/client-personalization
+602 silly ADD node_modules/@algolia/client-analytics
+603 silly ADD node_modules/@algolia/client-account
+604 silly ADD node_modules/@algolia/cache-in-memory
+605 silly ADD node_modules/@algolia/cache-browser-local-storage
+606 silly ADD node_modules/@vueuse/shared
+607 silly ADD node_modules/@vueuse/shared/node_modules/vue-demi
+608 silly ADD node_modules/@vueuse/metadata
+609 silly ADD node_modules/@types/web-bluetooth
+610 silly ADD node_modules/rfdc
+611 silly ADD node_modules/speakingurl
+612 silly ADD node_modules/perfect-debounce
+613 silly ADD node_modules/mitt
+614 silly ADD node_modules/hookable
+615 silly ADD node_modules/@vue/devtools-shared
+616 silly ADD node_modules/@vue/devtools-kit
+617 silly ADD node_modules/@types/mdurl
+618 silly ADD node_modules/@types/linkify-it
+619 silly ADD node_modules/@algolia/logger-common
+620 silly ADD node_modules/@algolia/cache-common
+621 silly ADD node_modules/@algolia/transporter
+622 silly ADD node_modules/@algolia/requester-common
+623 silly ADD node_modules/@algolia/client-common
+624 silly ADD node_modules/@algolia/autocomplete-shared
+625 silly ADD node_modules/search-insights
+626 silly ADD node_modules/@algolia/autocomplete-plugin-algolia-insights
+627 silly ADD node_modules/algoliasearch
+628 silly ADD node_modules/@algolia/client-search
+629 silly ADD node_modules/@algolia/autocomplete-preset-algolia
+630 silly ADD node_modules/@algolia/autocomplete-core
+631 silly ADD node_modules/preact
+632 silly ADD node_modules/@docsearch/react
+633 silly ADD node_modules/shiki
+634 silly ADD node_modules/minisearch
+635 silly ADD node_modules/mark.js
+636 silly ADD node_modules/focus-trap
+637 silly ADD node_modules/@vueuse/integrations
+638 silly ADD node_modules/@vueuse/integrations/node_modules/vue-demi
+639 silly ADD node_modules/@vueuse/core
+640 silly ADD node_modules/@vueuse/core/node_modules/vue-demi
+641 silly ADD node_modules/@vue/shared
+642 silly ADD node_modules/@vue/devtools-api
+643 silly ADD node_modules/vue
+644 silly ADD node_modules/vite
+645 silly ADD node_modules/@vitejs/plugin-vue
+646 silly ADD node_modules/@types/markdown-it
+647 silly ADD node_modules/@shikijs/transformers
+648 silly ADD node_modules/@shikijs/core
+649 silly ADD node_modules/@docsearch/js
+650 silly ADD node_modules/@docsearch/css
+651 silly ADD node_modules/vitepress
+652 silly REMOVE node_modules/touch
+653 silly REMOVE node_modules/undefsafe
+654 silly REMOVE node_modules/simple-update-notifier
+655 silly REMOVE node_modules/simple-update-notifier/node_modules/semver
+656 silly REMOVE node_modules/semver
+657 silly REMOVE node_modules/to-regex-range
+658 silly REMOVE node_modules/readdirp
+659 silly REMOVE node_modules/picomatch
+660 silly REMOVE node_modules/pstree.remy
+661 silly REMOVE node_modules/supports-color
+662 silly REMOVE node_modules/nodemon
+663 silly REMOVE node_modules/ms
+664 silly REMOVE node_modules/normalize-path
+665 silly REMOVE node_modules/minimatch
+666 silly REMOVE node_modules/is-number
+667 silly REMOVE node_modules/nopt
+668 silly REMOVE node_modules/is-glob
+669 silly REMOVE node_modules/is-binary-path
+670 silly REMOVE node_modules/is-extglob
+671 silly REMOVE node_modules/concat-map
+672 silly CHANGE node_modules/fsevents
+673 silly REMOVE node_modules/ignore-by-default
+674 silly REMOVE node_modules/glob-parent
+675 silly REMOVE node_modules/debug
+676 silly REMOVE node_modules/brace-expansion
+677 silly REMOVE node_modules/binary-extensions
+678 silly REMOVE node_modules/braces
+679 silly REMOVE node_modules/has-flag
+680 silly REMOVE node_modules/fill-range
+681 silly REMOVE node_modules/chokidar
+682 silly REMOVE node_modules/anymatch
+683 silly REMOVE node_modules/balanced-match
+684 silly REMOVE node_modules/abbrev
+685 verbose exit 0
+686 info ok

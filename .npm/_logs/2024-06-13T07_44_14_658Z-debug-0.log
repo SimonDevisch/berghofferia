@@ -1,0 +1,14 @@
+0 verbose cli /opt/homebrew/Cellar/node/22.2.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@10.7.0
+2 info using node@v22.2.0
+3 silly config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc
+4 silly config:load:file:/Users/simondevisch/Library/CloudStorage/OneDrive-ODISEE/ICT/extra/vitepress/.npmrc
+5 silly config:load:file:/Users/simondevisch/.npmrc
+6 silly config:load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm vitepress init
+8 verbose argv "vitepress" "init"
+9 verbose logfile logs-max:10 dir:/Users/simondevisch/.npm/_logs/2024-06-13T07_44_14_658Z-
+10 verbose logfile /Users/simondevisch/.npm/_logs/2024-06-13T07_44_14_658Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 verbose exit 1
+13 verbose code 1
