@@ -32,5 +32,8 @@ Deze week hebben we ons bezig gehouden met te zorgen dat de kookplaten werken en
 Het doel voor volgende week is dat de pannen en het vlees allemaal in de kast liggen en op het vuur gezet kunnen worden, we hebben al code geschreven voor het bakken van het vlees maar dit nog niet goed kunnen testen dus hopelijk werkt dit direct. 
 
 Week 6: 
+Deze week hebben we ons bezig gehouden met te zorgen dat al het vlees en alle pannen in de kast zitten, en op het vuur gezet kunnen worden, ook hebben we ervoor gezorgt dat er borden werden toegevoegd. Ook dat er maar 1 item ter gelijker tijd kan worden aangeklikt.
+het doel voor volgende week is dat het vlees kan bakken, op de borden kan gaan en dat we het kunnen afgeven aan de klant
 
-
+Week 7:
+Deze week begonnen we met een hele boel buggs dus zijn we een paar commits moeten terug gaan, het vlees kon nog altijd in de pan maar je kon terug meerdere stukken vlees selecten. Dit kregen we niet meer zonder errors opgelost dus hebben we onze focus ergens anders gelegt. Dan hebben we ervoor gezorcht dat het vlees gebakken kan worden. Ook enkele bugs errond 
