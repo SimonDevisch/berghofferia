@@ -1,0 +1,450 @@
+/* code van website */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accentcolor_lg: #DFE6DD;
+    --detailcolor: #BBFCA9;
+    --tekstkleur: #201f1f;
+    --white: #FFFFFF;
+    --lightgreycolor: #fafafa;
+    --heatercolor: #fa0909cc;
+}
+
+body {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+p {
+    max-width: 700px;
+}
+
+html {
+    line-height: 1.6rem;
+    height: 100%;
+    color: var(--tekstkleur);
+    font-family: 'kanit', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+/* Header desktop */
+header.container {
+    background-color: var(--accentcolor_lg);
+    flex-direction: row;
+}
+
+header a {
+    justify-self: flex-end;
+    text-decoration: none;
+    background-color: var(--lightgreycolor);
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--tekstkleur);
+    padding: 0.5rem;
+    border: 3px solid var(--lightgreycolor);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+header a:hover,
+header a:focus-visible {
+    background-color: var(--detailcolor);
+    border: 3px solid var(--white);
+    outline: none;
+}
+
+h1 {
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    flex-grow: 2;
+    text-decoration: underline;
+}
+
+.gamescreen button,
+.flexbuttons button {
+    display: inline-block;
+    background-color: var(--white);
+    border: var(--lightgreycolor) 2px solid;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1rem;
+}
+
+/* Main desktop */
+.intro {
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro p {
+    margin: 1rem 0;
+}
+
+.startbutton {
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--lightgreycolor);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: larger;
+    border: 5px solid var(--accentcolor_lg);
+    border-radius: 5px;
+    box-shadow: 3px 5px #D3D3D4;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.startbutton:hover,
+.startbutton:focus-visible {
+    background-color: var(--accentcolor_lg);
+    outline: none;
+}
+
+/* Game */
+.gamescreen {
+    border: 5px solid #000000;
+    width: 65rem !important;
+}
+
+.gamescreen img {
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Footer desktop*/
+footer.container {
+    background-color: var(--accentcolor_lg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer>h2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.footer_info h3 {
+    text-align: center;
+    background-color: var(--lightgreycolor);
+    margin-top: 0;
+    padding: 0.5rem 0;
+}
+
+.footer_info {
+    width: 30%;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.footer_info ul {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.footer_info ul li {
+    margin: 0.5rem 1rem;
+}
+
+.footer_info ul li::marker {
+    color: var(--accentcolor_lg);
+}
+
+.order-container {
+    position: relative;
+}
+
+.order-container p {
+    margin: 0;
+    padding: 1rem 0;
+}
+
+.order-container img {
+    display: block;
+}
+
+.order-container div {
+    left: 35rem;
+    bottom: 39rem;
+    height: 0;
+    padding: 0;
+}
+
+.order-container button:nth-child(1) {
+    top: 3rem;
+    height: 4rem;
+    left: 4rem;
+}
+
+.order-container button {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 7.5px 15px;
+    background-color: var(--accentcolor_lg);
+    height: auto;
+}
+
+.animated-gif {
+    /* dit is de stijl voor de lava gif die de stove wordt*/
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 66%;
+    left: 43.5%;
+}
+
+.gif {
+    border-radius: 100%;
+}
+
+.animated-gif :first-child {
+    margin-bottom: 5rem;
+}
+
+.flexbuttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.buttons {
+    max-width: 7rem;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    gap: 4.7rem;
+    bottom: 2rem;
+    left: 22.5rem;
+}
+
+.intensiteitbuttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons p {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--heatercolor);
+}
+
+.flexbuttons {
+    justify-content: space-between;
+}
+
+.flexbuttons button {
+    height: 3rem;
+    width: 50%;
+}
+
+.order-container-keuken {
+    bottom: 700px;
+    padding: 0;
+}
+
+.pannen img {
+    position: absolute;
+    height: 3rem;
+    width: 7rem;
+}
+
+.pannen img:first-child {
+    top: 4rem;
+    left: 1.5rem;
+}
+
+/*img*/
+.pannen img:nth-child(2) {
+    top: 4rem;
+    left: 9rem;
+}
+
+.pannen img:nth-child(3) {
+    top: 16rem;
+    left: 1rem;
+    height: 6rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(4) {
+    top: 24rem;
+    left: 1rem;
+    height: 5rem;
+}
+
+.pannen img:nth-child(5) {
+    top: 17rem;
+    left: 9rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(6) {
+    top: 24rem;
+    left: 9rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(7) {
+    top: 32rem;
+    left: 5rem;
+    height: 5rem;
+    width: 6rem;
+}
+
+.pannen img:nth-child(8) {
+    top: 10rem;
+    left: 1rem;
+}
+
+.pannen img:nth-child(9) {
+    top: 10rem;
+    left: 9rem;
+}
+
+#panVuur1,
+#panVuur2 {
+    position: absolute;
+    height: 15rem;
+    z-index: 2;
+    width: 13rem;
+    bottom: 6rem;
+}
+
+#panVuur1 {
+    left: 20.5rem;
+}
+
+#panVuur2 {
+    left: 33.5rem;
+}
+
+.counterButton {
+    position: absolute;
+    right: 1rem;
+    bottom: 2rem;
+}
+
+.animated-gif img {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    padding: 0.5rem;
+    bottom: 3rem;
+}
+
+.animated-gif img:first-child {
+    position: absolute;
+    margin: 0;
+    left: -5rem;
+}
+
+.animated-gif img:nth-child(2) {
+    position: absolute;
+    left: 8rem;
+}
+
+.bordkeuken img {
+    bottom: 11rem;
+    right: 5rem;
+}
+
+.bordonthaal img {
+    bottom: 6rem;
+    left: 6rem;
+}
+
+.bord img {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+}
+
+.kastGerief {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.vlees {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+    position: absolute;
+    bottom: 5rem;
+    left: 39%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.bakken {
+    bottom: 5rem;
+    left: 39%;
+}
+
+.selected {
+    border: 3px solid green;
+}
+
+.options {
+    border: 3px dashed orange;
+}
+
+.positie1 {
+    z-index: 3;
+    left: 23.5rem !important;
+    top: 28rem !important;
+}
+
+.positie2 {
+    z-index: 3;
+    left: 36.5rem !important;
+    top: 27rem !important;
+}
+
+body.container.positieBord {
+    position: absolute !important;
+    bottom: 11rem !important;
+    right: 5rem !important;
+    z-index: 2;
+}
+
+
+/* BESTELLING */
+
+.order-details-keuken {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+}
