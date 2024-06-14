@@ -1,0 +1,286 @@
+/* code van website */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --accentcolor_lg: #DFE6DD;
+    --detailcolor: #BBFCA9;
+    --tekstkleur: #201f1f;
+    --white: #FFFFFF;
+    --lightgreycolor: #fafafa;
+    --heatercolor: #fa0909cc;
+}
+
+body {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+p {
+    max-width: 700px;
+}
+
+html {
+    line-height: 1.6rem;
+    height: 100%;
+    color: var(--tekstkleur);
+    font-family: 'kanit',sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+/* Header desktop */
+header.container {
+    background-color: var(--accentcolor_lg);
+    flex-direction: row;
+}
+
+header a {
+    justify-self: flex-end;
+    text-decoration: none;
+    background-color: var(--lightgreycolor);
+    border-radius: 3px;
+    cursor: pointer;
+    color: var(--tekstkleur);
+    padding: 0.5rem;
+    border: 3px solid var(--lightgreycolor);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+header a:hover,
+header a:focus-visible {
+    background-color: var(--detailcolor);
+    border: 3px solid var(--white);
+    outline: none;
+}
+
+h1 {
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+    flex-grow: 2;
+    text-decoration: underline;
+}
+
+/* Main desktop */
+.intro {
+    margin: 0 auto;
+}
+
+.intro p {
+    margin: 2rem 0;
+}
+
+.startbutton {
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    background-color: var(--lightgreycolor);
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: larger;
+    border: 5px solid var(--accentcolor_lg);
+    border-radius: 5px;
+    box-shadow: 3px 5px #D3D3D4;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.startbutton:hover,
+.startbutton:focus-visible {
+    background-color: var(--accentcolor_lg);
+    outline: none;
+}
+
+/* Game */
+.gamescreen {
+    border: 5px solid #000000;
+}
+
+.gamescreen img {
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer desktop*/
+footer.container {
+    background-color: var(--accentcolor_lg);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer > h2 {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.footer_info h3 {
+    text-align: center;
+    background-color: var(--lightgreycolor);
+    margin-top: 0;
+    padding: 0.5rem 0;
+}
+
+.footer_info {
+    width: 30%;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.footer_info ul {
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.footer_info ul li {
+    margin: 0.5rem 1rem;
+}
+
+.footer_info ul li::marker {
+    color: var(--accentcolor_lg);
+}
+
+.order-container {
+    position: relative;
+    display: inline-block;
+}
+
+.order-container img {
+    display: block;  
+}
+
+.order-container div{
+    left: 650px;
+    bottom: 700px;
+    height: 50px;
+    padding: 0;
+}
+
+.order-container button:nth-child(1){
+    top: 5rem;
+    height: 4rem;
+    left: 70px;
+}
+
+.order-container button{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    padding: 7.5px 15px;
+    background-color:var(--accentcolor_lg);
+    height: auto;
+}
+.animated-gif{ /* dit is de stijl voor de lava gif die de stove wordt*/
+    height: 7rem;
+    width: 7rem;
+    margin: 0 auto;
+    position: absolute;
+    top: 66%;
+    left: 43.5%;
+}
+.gif{
+    border-radius: 100%;
+}
+.animated-gif :first-child{
+    margin-bottom: 5rem;
+}
+.flexbuttons{
+    display: flex;
+    gap: 0.5rem ;
+}
+.buttons{
+    max-width: 7rem;
+    margin: 0 auto;
+    position:absolute;
+    top: 73%;
+    left: 43.5%;
+}
+.buttons p{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--heatercolor);
+}
+.flexbuttons{
+    justify-content: space-between;
+}
+.flexbuttons button{
+    height: 2rem;
+    width:4rem;
+    margin-top: -1.5rem;
+}
+.buttons :nth-child(2){
+    margin-bottom: 4.5rem;
+}
+.order-container-keuken{
+    bottom: 700px;
+    padding: 0;
+}
+.counterButton{
+    position: absolute;
+    left: 50%;
+    top: 101%;
+}
+
+.screen img:first-child {
+    width: 100%;
+}
+
+.screen img:nth-child(2) {
+    position: absolute;
+    bottom: 10%;
+    left: 35%;
+    width: 16%;
+    height: 20%;
+}
+
+.kastGerief {
+    position: absolute;
+    top: 4rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.vlees {
+    position: absolute;
+    bottom: 5rem;
+    left: 1rem;
+    width: 5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: inline;
+    position: absolute;
+    bottom: 5rem;
+    left: 39%;
+    width: 5rem;
+    height: 5rem;
+}
+
+.bakken {
+    bottom: 5rem;
+    left: 39%;
+}
+
+.selected {
+    border: 3px solid green;
+}
+
+.options {
+    border: 3px dashed orange;
+}
